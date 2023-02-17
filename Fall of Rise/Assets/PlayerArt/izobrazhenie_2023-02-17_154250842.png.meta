@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -120,12 +120,12 @@ TextureImporter:
       name: izobrazhenie_2023-02-17_154250842_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 15
-        height: 21
+        width: 9
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: izobrazhenie_2023-02-17_154250842_1
       rect:
         serializedVersion: 2
-        x: 15
+        x: 18
         y: 0
-        width: 15
-        height: 21
+        width: 9
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: izobrazhenie_2023-02-17_154250842_2
       rect:
         serializedVersion: 2
-        x: 30
+        x: 33
         y: 0
-        width: 15
-        height: 21
+        width: 9
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,13 +183,13 @@ TextureImporter:
       name: izobrazhenie_2023-02-17_154250842_3
       rect:
         serializedVersion: 2
-        x: 45
+        x: 50
         y: 0
-        width: 15
-        height: 21
+        width: 9
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
