@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -120,10 +120,10 @@ TextureImporter:
       name: Sprite-myzhyk_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 96
-        width: 16
-        height: 32
+        width: 11
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,9 +142,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 96
+        y: 97
         width: 16
-        height: 32
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: Sprite-myzhyk_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 39
         y: 96
-        width: 16
-        height: 32
+        width: 9
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: Sprite-myzhyk_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 53
         y: 96
-        width: 16
-        height: 32
+        width: 11
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +204,10 @@ TextureImporter:
       name: Sprite-myzhyk_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 68
         y: 96
-        width: 16
-        height: 32
+        width: 12
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,10 +225,10 @@ TextureImporter:
       name: Sprite-myzhyk_5
       rect:
         serializedVersion: 2
-        x: 80
+        x: 87
         y: 96
-        width: 16
-        height: 32
+        width: 9
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +246,10 @@ TextureImporter:
       name: Sprite-myzhyk_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 64
-        width: 16
-        height: 32
+        width: 11
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,10 +267,10 @@ TextureImporter:
       name: Sprite-myzhyk_7
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 19
+        y: 65
         width: 16
-        height: 32
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,10 +288,10 @@ TextureImporter:
       name: Sprite-myzhyk_8
       rect:
         serializedVersion: 2
-        x: 32
+        x: 38
         y: 64
-        width: 16
-        height: 32
+        width: 9
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,10 +309,10 @@ TextureImporter:
       name: Sprite-myzhyk_9
       rect:
         serializedVersion: 2
-        x: 48
+        x: 55
         y: 64
-        width: 16
-        height: 32
+        width: 11
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,10 +330,10 @@ TextureImporter:
       name: Sprite-myzhyk_10
       rect:
         serializedVersion: 2
-        x: 64
+        x: 71
         y: 64
-        width: 16
-        height: 32
+        width: 12
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +351,10 @@ TextureImporter:
       name: Sprite-myzhyk_11
       rect:
         serializedVersion: 2
-        x: 80
+        x: 87
         y: 64
-        width: 16
-        height: 32
+        width: 9
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,10 +372,10 @@ TextureImporter:
       name: Sprite-myzhyk_12
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 32
-        width: 16
-        height: 32
+        width: 9
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,10 +393,10 @@ TextureImporter:
       name: Sprite-myzhyk_13
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 32
+        x: 19
+        y: 33
+        width: 9
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,10 +414,10 @@ TextureImporter:
       name: Sprite-myzhyk_14
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 32
-        width: 16
-        height: 32
+        width: 9
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,10 +435,10 @@ TextureImporter:
       name: Sprite-myzhyk_15
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 32
+        x: 51
+        y: 33
+        width: 9
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: Sprite-myzhyk_16
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 16
-        height: 32
+        x: 67
+        y: 34
+        width: 9
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,10 +477,10 @@ TextureImporter:
       name: Sprite-myzhyk_17
       rect:
         serializedVersion: 2
-        x: 80
+        x: 84
         y: 32
-        width: 16
-        height: 32
+        width: 9
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -498,10 +498,10 @@ TextureImporter:
       name: Sprite-myzhyk_18
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 0
-        width: 16
-        height: 32
+        width: 9
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -519,10 +519,10 @@ TextureImporter:
       name: Sprite-myzhyk_19
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 32
+        x: 19
+        y: 2
+        width: 9
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -540,10 +540,10 @@ TextureImporter:
       name: Sprite-myzhyk_20
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 32
+        x: 35
+        y: 1
+        width: 9
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -561,10 +561,10 @@ TextureImporter:
       name: Sprite-myzhyk_21
       rect:
         serializedVersion: 2
-        x: 48
+        x: 51
         y: 0
-        width: 16
-        height: 32
+        width: 9
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -582,10 +582,10 @@ TextureImporter:
       name: Sprite-myzhyk_22
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 32
+        x: 67
+        y: 2
+        width: 9
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -603,10 +603,10 @@ TextureImporter:
       name: Sprite-myzhyk_23
       rect:
         serializedVersion: 2
-        x: 80
+        x: 83
         y: 0
-        width: 16
-        height: 32
+        width: 9
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
