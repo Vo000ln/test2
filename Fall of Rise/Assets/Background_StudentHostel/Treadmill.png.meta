@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 153e2a52535cc8046a4471d672dfd7aa
+guid: 4c526814f9ef7474b819814b2855634b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,22 +117,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tile-SpringGround_0
+      name: Treadmill_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 19
-        width: 17
-        height: 16
-      alignment: 9
-      pivot: {x: 0.4999998, y: 0.5354767}
+        x: 20
+        y: 53
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e90bd7504455f2c41905cea9faf83b51
-      internalID: 868419424
+      spriteID: b824e17abe84dc749a4713eb7a0e5c1e
+      internalID: 1184836030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treadmill_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 26
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48314b524743a104aa754caba952d73b
+      internalID: -1356034312
       vertices: []
       indices: 
       edges: []
@@ -148,7 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tile-SpringGround_0: 868419424
+      Treadmill_1: -1356034312
+      Treadmill_0: 1184836030
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
