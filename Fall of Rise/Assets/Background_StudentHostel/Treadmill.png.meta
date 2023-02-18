@@ -120,40 +120,19 @@ TextureImporter:
       name: Treadmill_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 53
-        width: 26
-        height: 18
+        x: 0
+        y: 0
+        width: 0
+        height: 0
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b824e17abe84dc749a4713eb7a0e5c1e
-      internalID: 1184836030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Treadmill_1
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 26
-        width: 26
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48314b524743a104aa754caba952d73b
-      internalID: -1356034312
+      spriteID: 2706efa63a3c12c70800000000000000
+      internalID: 8944645441576657010
       vertices: []
       indices: 
       edges: []
@@ -161,7 +140,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -169,8 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Treadmill_1: -1356034312
-      Treadmill_0: 1184836030
+      Treadmill_0: 8944645441576657010
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
