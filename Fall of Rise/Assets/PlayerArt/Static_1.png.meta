@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -120,13 +120,13 @@ TextureImporter:
       name: Static_1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 6
-        width: 16
-        height: 27
+        x: 14
+        y: 8
+        width: 11
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 16, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -141,13 +141,13 @@ TextureImporter:
       name: Static_1_1
       rect:
         serializedVersion: 2
-        x: 13
-        y: 6
-        width: 17
-        height: 27
+        x: 31
+        y: 7
+        width: 9
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 3, w: 4}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -162,13 +162,13 @@ TextureImporter:
       name: Static_1_2
       rect:
         serializedVersion: 2
-        x: 29
-        y: 6
-        width: 14
-        height: 27
+        x: 47
+        y: 8
+        width: 9
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 4}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -183,40 +183,19 @@ TextureImporter:
       name: Static_1_3
       rect:
         serializedVersion: 2
-        x: 45
-        y: 6
-        width: 14
-        height: 27
+        x: 64
+        y: 8
+        width: 11
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 4}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: b315165a321081c418a0706046d22d19
       internalID: 1765541805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Static_1_4
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 6
-        width: 15
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 4}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bdfced4a361ef5e4781af3072b144422
-      internalID: 1551623677
       vertices: []
       indices: 
       edges: []
@@ -232,7 +211,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Static_1_4: 1551623677
       Static_1_0: 1007276575
       Static_1_3: 1765541805
       Static_1_1: 2015876139
