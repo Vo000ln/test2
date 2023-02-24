@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 150862225fa217f4a97cce19b01b6afc
+guid: a09fe9ddd979ee04e83072d63b27bbdb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -117,505 +117,505 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-myzhyk_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 96
-        width: 13
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 516e6b2915d91cd4f957f37146527800
-      internalID: -1481277129
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 96
-        width: 23
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fea6fd9d2405c541bb40d47edec0067
-      internalID: 1295809642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_2
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 96
-        width: 9
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7c655adf48500f498c5da6eb2b86023
-      internalID: 1044277738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_3
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 96
-        width: 13
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 793a463db6cf4bc4e998f8aaf5916f0c
-      internalID: 1914781721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_4
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 96
-        width: 15
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f1a42f5be82a12488f1aead427145a3
-      internalID: 1182817730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_5
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 96
-        width: 9
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77e19f7ef0ceb744fa0c03389bb57124
-      internalID: 1640512614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_6
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 64
-        width: 13
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e344ff5d81ebdb64f8f4db93696700b7
-      internalID: 1620564355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_7
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 64
-        width: 21
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97044b493110bfa44b4200851340a1e8
-      internalID: -1612539341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_8
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 64
-        width: 9
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ec0bd739bfd34d42a9f6432f3ef1b19
-      internalID: 1613581996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_9
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 64
-        width: 13
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe2df1b1a7857134da9c1b074b763fe0
-      internalID: 1358758076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_10
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 64
-        width: 15
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0b6c39e506ca8347bad368b340ff62e
-      internalID: 152247666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_11
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 64
-        width: 9
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97d31915997787c4aa37d7ec36dce70e
-      internalID: 130523405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_12
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 32
-        width: 9
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aede641d97e04024d9abc71d469e8790
-      internalID: -1293030722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_13
+      name: Sprite-myzhyk 1_0
       rect:
         serializedVersion: 2
         x: 19
-        y: 32
-        width: 9
-        height: 21
+        y: 101
+        width: 11
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ad5699637006c24fa13c3b976112ad7
-      internalID: -941459143
+      spriteID: bf669cbc3c8dc4d44af921aef67ff443
+      internalID: 1545303079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-myzhyk_14
+      name: Sprite-myzhyk 1_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 32
-        width: 9
-        height: 20
+        x: 50
+        y: 102
+        width: 16
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e35cd0da4e8dff439176c9965d5950f
-      internalID: -102496943
+      spriteID: 7af31e9d5a177554d8318747fc9a2a86
+      internalID: -2112111744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-myzhyk_15
+      name: Sprite-myzhyk 1_2
       rect:
         serializedVersion: 2
-        x: 51
-        y: 32
-        width: 9
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 645b87880d2355b4fab1a0bbb9c23c30
-      internalID: 2085939534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_16
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 32
-        width: 9
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31f4e0a7e48e1a64781a6959f8340fd8
-      internalID: -479573771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_17
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 32
-        width: 9
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b1d1c3e1081d1c41a0e6c6f24854d71
-      internalID: -1128938604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_18
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 0
-        width: 9
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20beab8e899ced447a99089a5eb183e5
-      internalID: 1552932988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_19
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 0
-        width: 9
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c35f5e7388cb5b4498acde86c220a560
-      internalID: -1106999115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_20
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 9
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fed779ebd41e8654693b19915f3dd2d0
-      internalID: 1219179893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_21
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 0
-        width: 9
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d7478085ed93f84b969371b64f86f0f
-      internalID: -1657574724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_22
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 0
-        width: 9
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18c601fecb2577642a56a75affc4201a
-      internalID: 116614700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-myzhyk_23
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 0
+        x: 90
+        y: 101
         width: 9
         height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7956390abbe6a248b9951fad0e04eb9
-      internalID: -869860605
+      spriteID: b9f7ad17c303bed4db8795f55b923628
+      internalID: 1239795783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 101
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9785842e66164c74e952611f2015f696
+      internalID: 756091431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 101
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f89d2ea3cf02a4c9188241f295d9f9
+      internalID: -251947689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_5
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 101
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a012f066f51ca449fc3e378acef637
+      internalID: -168018176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 69
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5acf9e2dcbaa5d42a6e0bf22834edbb
+      internalID: -858501941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 69
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f6e7dd5f7f33442880d45535723352
+      internalID: -33089345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_8
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 69
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304c153799356834791cf93e2de31a91
+      internalID: -719374673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_9
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 69
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0587a0ffba6b6ed48ab1c84009a6b282
+      internalID: -1076745093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_10
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 69
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408f03260941bcb428984067309a6e89
+      internalID: 186214877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_11
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 69
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a230fec0e86244582a3e4fe2fa0c66
+      internalID: 560196448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 37
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ea988387ad0fe4881a644a9c45bf37
+      internalID: -2117021111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_13
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 37
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f2d55abe92c004fa30b6bb6b8ba06c
+      internalID: -1784817933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_14
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 37
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9892dbe7ceb211a4ab3d3c9a3c59bd82
+      internalID: 1771608752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_15
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 38
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9abe62ec74219e4aa12d64ca470a408
+      internalID: -484956680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_16
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 39
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66663466a048c0946a836e86c61037d8
+      internalID: -1963726170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_17
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 37
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0717f127ad01b3a4f84ed603fc0ec061
+      internalID: 235247942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 5
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1300504f270c44c48a4141c6f28b9a03
+      internalID: 843711936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_19
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 6
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25280fd6f34bfe941a90a7e67eb9b5e9
+      internalID: 193704343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_20
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 6
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a55ee3ff856524f973ced860633a15
+      internalID: 1818086089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_21
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 5
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a705afe184ecfbe4db1d08f54b6785fb
+      internalID: 390854775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_22
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 7
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a695594fd40ab1d45b9c2ef92ba9eaa1
+      internalID: 760771564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-myzhyk 1_23
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 5
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731620934dbe9a14183a1442197da4d4
+      internalID: 1828254843
       vertices: []
       indices: 
       edges: []
@@ -631,30 +631,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-myzhyk_3: 1914781721
-      Sprite-myzhyk_4: 1182817730
-      Sprite-myzhyk_9: 1358758076
-      Sprite-myzhyk_7: -1612539341
-      Sprite-myzhyk_0: -1481277129
-      Sprite-myzhyk_18: 1552932988
-      Sprite-myzhyk_11: 130523405
-      Sprite-myzhyk_22: 116614700
-      Sprite-myzhyk_8: 1613581996
-      Sprite-myzhyk_1: 1295809642
-      Sprite-myzhyk_14: -102496943
-      Sprite-myzhyk_16: -479573771
-      Sprite-myzhyk_12: -1293030722
-      Sprite-myzhyk_15: 2085939534
-      Sprite-myzhyk_19: -1106999115
-      Sprite-myzhyk_10: 152247666
-      Sprite-myzhyk_23: -869860605
-      Sprite-myzhyk_5: 1640512614
-      Sprite-myzhyk_2: 1044277738
-      Sprite-myzhyk_6: 1620564355
-      Sprite-myzhyk_17: -1128938604
-      Sprite-myzhyk_13: -941459143
-      Sprite-myzhyk_20: 1219179893
-      Sprite-myzhyk_21: -1657574724
+      Sprite-myzhyk 1_15: -484956680
+      Sprite-myzhyk 1_11: 560196448
+      Sprite-myzhyk 1_17: 235247942
+      Sprite-myzhyk 1_18: 843711936
+      Sprite-myzhyk 1_14: 1771608752
+      Sprite-myzhyk 1_19: 193704343
+      Sprite-myzhyk 1_13: -1784817933
+      Sprite-myzhyk 1_7: -33089345
+      Sprite-myzhyk 1_5: -168018176
+      Sprite-myzhyk 1_4: -251947689
+      Sprite-myzhyk 1_2: 1239795783
+      Sprite-myzhyk 1_23: 1828254843
+      Sprite-myzhyk 1_16: -1963726170
+      Sprite-myzhyk 1_0: 1545303079
+      Sprite-myzhyk 1_10: 186214877
+      Sprite-myzhyk 1_3: 756091431
+      Sprite-myzhyk 1_8: -719374673
+      Sprite-myzhyk 1_20: 1818086089
+      Sprite-myzhyk 1_22: 760771564
+      Sprite-myzhyk 1_1: -2112111744
+      Sprite-myzhyk 1_6: -858501941
+      Sprite-myzhyk 1_21: 390854775
+      Sprite-myzhyk 1_9: -1076745093
+      Sprite-myzhyk 1_12: -2117021111
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
