@@ -53,6 +53,6 @@ public class PlayerSelect : MonoBehaviour
     public void StartScene()
     {
         PlayerPrefs.SetInt("SelectPlayer", index);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("HomePlayer");
     }
 }
