@@ -11,6 +11,11 @@ public class DialogManager : MonoBehaviour
     public Animator boxAnim;
     public Animator startAnim;
 
+    //for stop time text
+    public Text stopName;
+    public Text stopDialogText;
+    public Text stopNextButton;
+
     private Queue<string> sentences;
 
     private void Start()
@@ -28,11 +33,29 @@ public class DialogManager : MonoBehaviour
         nameText.text = dialog.name;    //name npc
         sentences.Clear(); //clear text
 
+        Invoke("DisableText", 0f);
+        Invoke("AbleText", 1.5f);  //invoke after 2 seconds
+
         foreach (string sentence in dialog.sentences)
         {
             sentences.Enqueue(sentence); //queue in buf
         }
         DisplayNextSentence();
+    }
+
+    //stop time dialog
+    void DisableText()
+    {
+        stopName.enabled = false;
+        stopDialogText.enabled = false;
+        stopNextButton.enabled = false;
+    }
+    //and on time dialog
+    void AbleText()
+    {
+        stopName.enabled = true;
+        stopDialogText.enabled = true;
+        stopNextButton.enabled = true;
     }
 
     public void DisplayNextSentence()
