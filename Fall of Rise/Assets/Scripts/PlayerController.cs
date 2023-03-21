@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using VIDE_Data;
 public class PlayerController : MonoBehaviour
 {
+    
     private Rigidbody2D myRB;
     [SerializeField] private float speed;
     private Animator Anim;
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour
     {
         myRB = GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -27,5 +29,7 @@ public class PlayerController : MonoBehaviour
             Anim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             Anim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
         }
+
     }
+
 }
