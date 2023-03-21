@@ -6,7 +6,11 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("CutScene");
+        if(DataClass.scene.Length == 0)
+            SceneManager.LoadScene("CutScene");
+        else{
+            SceneManager.LoadScene(DataClass.scene);
+        }
     }
     public void ExitGame()
     {
