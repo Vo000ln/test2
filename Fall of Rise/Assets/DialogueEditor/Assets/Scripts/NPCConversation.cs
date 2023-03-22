@@ -384,8 +384,14 @@ namespace DialogueEditor
         private SpeechNode CreateSpeechNode(EditableSpeechNode editableNode)
         {
             SpeechNode speech = new SpeechNode();
-            speech.Name = editableNode.Name;
-            speech.Text = editableNode.Text;
+            string moth = "Мама";
+            if(editableNode.Name != moth){
+                speech.Name = DataClass.name;
+            }else
+                speech.Name = editableNode.Name;
+            string tmp = editableNode.Text.ToString(); 
+            tmp = tmp.Replace("<Name>",DataClass.name);
+            speech.Text = tmp;
             speech.AutomaticallyAdvance = editableNode.AdvanceDialogueAutomatically;
             speech.AutoAdvanceShouldDisplayOption = editableNode.AutoAdvanceShouldDisplayOption;
             speech.TimeUntilAdvance = editableNode.TimeUntilAdvance;
