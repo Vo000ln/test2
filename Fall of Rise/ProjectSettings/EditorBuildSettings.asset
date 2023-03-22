@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HomePlayer.unity
     guid: 991981178fd89684f8e341226de70ebc
+  - enabled: 1
+    path: Assets/Scenes/Computer.unity
+    guid: 7970270b9d3b71d47bf0c72cb573f47c
   m_configObjects: {}
