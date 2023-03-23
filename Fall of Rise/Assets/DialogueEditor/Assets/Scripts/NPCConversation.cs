@@ -385,10 +385,14 @@ namespace DialogueEditor
         {
             SpeechNode speech = new SpeechNode();
             string moth = "Мама";
-            if(editableNode.Name != moth){
-                speech.Name = DataClass.name;
-            }else
-                speech.Name = editableNode.Name;
+            string name = editableNode.Name.ToString();
+            //if(editableNode.Name != moth){
+              //  speech.Name = DataClass.name;
+            //}else
+              //  speech.Name = editableNode.Name;
+
+            name = name.Replace("<Name>", DataClass.name);
+            speech.Name = name;
             string tmp = editableNode.Text.ToString(); 
             tmp = tmp.Replace("<Name>",DataClass.name);
             speech.Text = tmp;
