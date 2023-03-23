@@ -5,7 +5,6 @@ using UnityEngine;
 public class MovedObject : MonoBehaviour
 {
     public Transform transform;
-    public Transform target;
     public float speed;
     public bool fl = false;
     void Start(){
