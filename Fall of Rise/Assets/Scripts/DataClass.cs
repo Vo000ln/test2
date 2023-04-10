@@ -14,4 +14,8 @@ public static class DataClass
     public static int brave = 0;
     //rel_mother - отношение с мамой
     public static int rel_mother = 0;
+
+    //диалоги
+    //choose_conversation_mommy - диалог с мамой
+    public static int choose_conversation_mommy = 1; //начинаем с 1, чтобы первый диалог точно активировался
 }
