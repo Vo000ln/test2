@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovedObject : MonoBehaviour
+public class MovedMommy : MonoBehaviour
 {
     public Transform transform;
     public float speed;
@@ -30,5 +30,6 @@ public class MovedObject : MonoBehaviour
     }
     public void start(){
         fl = true;
+        DataClass.choose_conversation_mommy = 3; //активируется диалог после выбора, чтобы мама сама посмотрела списки
     }
 }
