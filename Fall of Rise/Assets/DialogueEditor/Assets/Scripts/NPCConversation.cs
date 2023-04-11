@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Runtime.Serialization;
@@ -384,17 +385,14 @@ namespace DialogueEditor
         private SpeechNode CreateSpeechNode(EditableSpeechNode editableNode)
         {
             SpeechNode speech = new SpeechNode();
-            string moth = "Мама";
+            //это сделал я, Паша, не кринжуйте сильно, здесь идет замена текста, который в эдиторе помечен <Name> на имя персонажа
+            //которое берется из DataClass.name
             string name = editableNode.Name.ToString();
-            //if(editableNode.Name != moth){
-              //  speech.Name = DataClass.name;
-            //}else
-              //  speech.Name = editableNode.Name;
-
             name = name.Replace("<Name>", DataClass.name);
             speech.Name = name;
             string tmp = editableNode.Text.ToString(); 
-            tmp = tmp.Replace("<Name>",DataClass.name);
+            tmp = tmp.Replace("<Name>", DataClass.name);
+            //конец замены на имя
             speech.Text = tmp;
             speech.AutomaticallyAdvance = editableNode.AdvanceDialogueAutomatically;
             speech.AutoAdvanceShouldDisplayOption = editableNode.AutoAdvanceShouldDisplayOption;
@@ -418,6 +416,84 @@ namespace DialogueEditor
         private OptionNode CreateOptionNode(EditableOptionNode editableNode)
         {
             OptionNode option = new OptionNode();
+
+            string tmp = editableNode.Text.ToString();
+            //intellect+(число) brave+(число) realtion+(число) - писать в конце строки, чтобы было удобнее Пашечке. если несколько, !!!!!то пишем через пробелы!!!!!!!!!!
+            //сейчас начинается еще более лютый кринж... intellect+(число) brave+(число) realtion+(число) парсятся(можно и с минусом), сохраняются
+            //в отдельную строчку и далее оттуда ихчлекается число, которое прибавляется к прогрессу персонажая, как то так))
+            
+            //СМЕЛОСТЬ
+            int brave = tmp.IndexOf("brave");
+            if(brave != -1){
+                //переходим к концу слова brave
+                brave += 5;
+
+                //ищем следющий пробел после сочетания 
+                int nextspace = brave;
+                for(int i = 0;i < tmp.Length; ++i)
+                    if(tmp[i] == ' '){
+                        nextspace = i;
+                        break;
+                    }
+
+                //получаем подстроку +/- и какое то число
+                //если несколько подряд идет, то берем подстроку до пробела
+                string sub;
+                if(nextspace == brave){
+                    sub = tmp.Substring(brave);
+                }else{
+                    Debug.Log(nextspace);
+                    Debug.Log(brave);
+                    sub = tmp.Substring(brave, nextspace - brave);
+                }
+
+
+                //sub.substr(1) - чтобы избавиться от знака
+                int number = Int32.Parse(sub.Substring(1));   
+                //если стоит минус вычитаем иначе прибавляем
+                if(sub[0] == '-')
+                    DataClass.brave -= number;
+                else
+                    DataClass.brave += number;
+                Debug.Log(DataClass.brave);
+            }
+
+            //ИНТЕЛЛЕКТ
+            int intellect = tmp.IndexOf("intellect");
+            if(intellect != -1){
+                //переходим к концу слова intellect
+                intellect += 9;
+                //получаем подстроку +/- и какое то число
+                string sub = tmp.Substring(intellect);
+                //sub.substr(1) - чтобы избавиться от знака
+                int number = Int32.Parse(sub.Substring(1));   
+                //если стоит минус вычитаем иначе прибавляем
+                if(sub[0] == '-')
+                    DataClass.intellect -= number;
+                else
+                    DataClass.intellect += number;
+                Debug.Log(DataClass.intellect);
+            }
+
+            //ОТНОШЕНИЯ С МАМОЙ
+            int relation = tmp.IndexOf("relation");
+            if(relation != -1){
+                //переходим к концу слова relation
+                relation += 8;
+                //получаем подстроку +/- и какое то число
+                string sub = tmp.Substring(relation);
+                //sub.substr(1) - чтобы избавиться от знака
+                int number = Int32.Parse(sub.Substring(1));   
+                //если стоит минус вычитаем иначе прибавляем
+                if(sub[0] == '-')
+                    DataClass.relation -= number;
+                else
+                    DataClass.relation += number;
+                Debug.Log(DataClass.relation);
+            }
+
+            //конец моего творения
+            
             option.Text = editableNode.Text;
             option.TMPFont = editableNode.TMPFont;
 
