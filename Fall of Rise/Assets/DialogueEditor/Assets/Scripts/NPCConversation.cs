@@ -430,11 +430,9 @@ namespace DialogueEditor
 
                 //ищем следющий пробел после сочетания 
                 int nextspace = brave;
-                for(int i = 0;i < tmp.Length; ++i)
-                    if(tmp[i] == ' '){
+                for(int i = brave;i < tmp.Length && nextspace == brave; ++i)
+                    if(tmp[i] == ' ')
                         nextspace = i;
-                        break;
-                    }
 
                 //получаем подстроку +/- и какое то число
                 //если несколько подряд идет, то берем подстроку до пробела
@@ -442,8 +440,6 @@ namespace DialogueEditor
                 if(nextspace == brave){
                     sub = tmp.Substring(brave);
                 }else{
-                    Debug.Log(nextspace);
-                    Debug.Log(brave);
                     sub = tmp.Substring(brave, nextspace - brave);
                 }
 
@@ -455,6 +451,10 @@ namespace DialogueEditor
                     DataClass.brave -= number;
                 else
                     DataClass.brave += number;
+
+                //убираем лишний текст
+                tmp = tmp.Remove(brave - 5, 5 + sub.Length);
+                
                 Debug.Log(DataClass.brave);
             }
 
@@ -463,8 +463,23 @@ namespace DialogueEditor
             if(intellect != -1){
                 //переходим к концу слова intellect
                 intellect += 9;
+
+                //ищем следющий пробел после сочетания
+                int nextspace = intellect;
+                for(int i = intellect;i < tmp.Length && nextspace == intellect; ++i)
+                    if(tmp[i] == ' ')
+                        nextspace = i;
+
                 //получаем подстроку +/- и какое то число
-                string sub = tmp.Substring(intellect);
+                //если несколько подряд идет, то берем подстроку до пробела
+                string sub;
+                if(nextspace == intellect){
+                    sub = tmp.Substring(intellect);
+                }else{
+                    sub = tmp.Substring(intellect, nextspace - intellect);
+                }
+
+
                 //sub.substr(1) - чтобы избавиться от знака
                 int number = Int32.Parse(sub.Substring(1));   
                 //если стоит минус вычитаем иначе прибавляем
@@ -472,6 +487,10 @@ namespace DialogueEditor
                     DataClass.intellect -= number;
                 else
                     DataClass.intellect += number;
+
+                //убираем лишний текст
+                tmp = tmp.Remove(intellect - 9, 9 + sub.Length);
+
                 Debug.Log(DataClass.intellect);
             }
 
@@ -480,8 +499,23 @@ namespace DialogueEditor
             if(relation != -1){
                 //переходим к концу слова relation
                 relation += 8;
+
+                //ищем следющий пробел после сочетания
+                int nextspace = relation;
+                for(int i = relation;i < tmp.Length && nextspace == relation; ++i)
+                    if(tmp[i] == ' ')
+                        nextspace = i;
+
                 //получаем подстроку +/- и какое то число
-                string sub = tmp.Substring(relation);
+                //если несколько подряд идет, то берем подстроку до пробела
+                string sub;
+                if(nextspace == relation){
+                    sub = tmp.Substring(relation);
+                }else{
+                    sub = tmp.Substring(relation, nextspace - relation);
+                }
+
+
                 //sub.substr(1) - чтобы избавиться от знака
                 int number = Int32.Parse(sub.Substring(1));   
                 //если стоит минус вычитаем иначе прибавляем
@@ -489,12 +523,16 @@ namespace DialogueEditor
                     DataClass.relation -= number;
                 else
                     DataClass.relation += number;
+
+                //убираем лишний текст
+                tmp = tmp.Remove(relation - 8, 8 + sub.Length);
+
                 Debug.Log(DataClass.relation);
             }
 
             //конец моего творения
             
-            option.Text = editableNode.Text;
+            option.Text = tmp;
             option.TMPFont = editableNode.TMPFont;
 
             CopyParamActions(editableNode, option);
