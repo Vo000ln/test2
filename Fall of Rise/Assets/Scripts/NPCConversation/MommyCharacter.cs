@@ -34,9 +34,8 @@ public class MommyCharacter : MonoBehaviour
     //    }
     //}
 
-    public bool zone = false;
-
-    public NPCConversation myConversation;
+    public bool zone = false; //зона, чтобы знать, когда персонаж подошел к объекту
+    public NPCConversation myConversation;  //диалоги
     public NPCConversation myConversation2;
     public NPCConversation myConversation3;
 
