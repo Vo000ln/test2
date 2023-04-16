@@ -11,7 +11,7 @@ public class QuestComputer : MonoBehaviour
         if (other.tag == "Player")
         {
             zone = true;
-            Debug.Log("OBJ");
+            //Debug.Log("OBJ");
         }
     }
 

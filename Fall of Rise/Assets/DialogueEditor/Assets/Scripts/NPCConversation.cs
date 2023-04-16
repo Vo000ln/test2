@@ -6,6 +6,7 @@ using UnityEngine.Serialization;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 
+
 namespace DialogueEditor
 {
     public enum eSaveVersion
@@ -27,6 +28,26 @@ namespace DialogueEditor
         /// <summary> Version 1.10 </summary>
         public const int CurrentVersion = (int)eSaveVersion.V1_10;
         private readonly string CHILD_NAME = "ConversationEventInfo";
+
+        
+        //добавление интеллекта
+        public void AddIntellect(int intellect)
+        {
+            DataClass.intellect += intellect;
+        }
+
+        //добавление смелости
+        public void AddBrave(int brave)
+        {
+            DataClass.brave += brave;
+        }
+
+        //добавление отношений с мамой
+        public void AddRelation(int relation)
+        {
+            DataClass.relation += relation;
+        }
+
 
         // Getters
         public int Version { get { return saveVersion; } }
@@ -79,6 +100,7 @@ namespace DialogueEditor
             h.NodeID = id;
             h.Event = new UnityEngine.Events.UnityEvent();
             NodeSerializedDataList.Add(h);
+
             return h;
         }
 
@@ -225,6 +247,7 @@ namespace DialogueEditor
                             EditableOptionNode option = conversation.GetOptionByUID(optionUID);
 
                             thisSpeech.Connections.Add(new EditableOptionConnection(option));
+
                         }
 
                         // Speech following speech
@@ -247,7 +270,10 @@ namespace DialogueEditor
                         {
                             allNodes[i].Connections.Add(new EditableSpeechConnection(speech));
                         }
+
                     }
+
+                    
                 }
                 //
                 // V1.10 +
@@ -285,8 +311,10 @@ namespace DialogueEditor
                     else if (thisNode.Connections[j].ConnectionType == EditableConnection.eConnectiontype.Option)
                     {
                         (thisNode.Connections[j] as EditableOptionConnection).Option.parents.Add(thisNode);
+
                     }
                 }
+
             }
         }
 
@@ -354,10 +382,11 @@ namespace DialogueEditor
             {
                 OptionNode node = CreateOptionNode(ec.Options[i]);
                 optionsByID.Add(ec.Options[i].ID, node);
-            }
 
+            }
             // Now that we have every node in the dictionary, reconstruct the tree 
             // And also look for the root
+
             ReconstructTree(ec, conversation, speechByID, optionsByID);
 
             return conversation;
@@ -418,7 +447,7 @@ namespace DialogueEditor
             OptionNode option = new OptionNode();
 
             string tmp = editableNode.Text.ToString();
-            //intellect+(число) brave+(число) realtion+(число) - писать в конце строки, чтобы было удобнее Пашечке. если несколько, !!!!!то пишем через пробелы!!!!!!!!!!
+            /*//intellect+(число) brave+(число) realtion+(число) - писать в конце строки, чтобы было удобнее Пашечке. если несколько, !!!!!то пишем через пробелы!!!!!!!!!!
             //сейчас начинается еще более лютый кринж... intellect+(число) brave+(число) realtion+(число) парсятся(можно и с минусом), сохраняются
             //в отдельную строчку и далее оттуда ихчлекается число, которое прибавляется к прогрессу персонажая, как то так))
             
@@ -531,7 +560,7 @@ namespace DialogueEditor
             }
 
             //конец моего творения
-            
+            */
             option.Text = tmp;
             option.TMPFont = editableNode.TMPFont;
 
@@ -634,12 +663,14 @@ namespace DialogueEditor
                         optionNode.Connections.Add(connection);
                     }
                 }
+
             }
         }
 
         private void CopyConnectionConditions(EditableConnection editableConnection, Connection connection)
         {
             List<EditableCondition> editableConditions = editableConnection.Conditions;
+
             for (int i = 0; i < editableConditions.Count; i++)
             {
                 if (editableConditions[i].ConditionType == EditableCondition.eConditionType.BoolCondition)
