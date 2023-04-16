@@ -14,6 +14,9 @@ public static class DataClass
     public static int brave = 0;
     //relation - отношение с мамой
     public static int relation = 0;
+    //пол персонажа - для вставки подходящей картинки в диалогах 
+    public static string gender;
+
 
     //диалоги
     //choose_conversation_mommy - диалог с мамой

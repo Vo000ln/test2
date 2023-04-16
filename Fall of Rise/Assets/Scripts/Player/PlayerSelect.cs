@@ -24,6 +24,12 @@ public class PlayerSelect : MonoBehaviour
         }
         if (characters[index])
         {
+            //запоминание выбора пола персонажа, 1 - ж, 0 - м
+            if (index == 1)
+                DataClass.gender = "W";
+            else
+                DataClass.gender = "M";
+
             characters[index].SetActive(true);
         }
     }
@@ -36,6 +42,15 @@ public class PlayerSelect : MonoBehaviour
         {
             index = characters.Length - 1;
         }
+
+        //запоминание выбора пола персонажа, 0 - ж, 1 - м
+        if (index == 1)
+            DataClass.gender = "w";
+        else
+            DataClass.gender = "m";
+
+        Debug.Log(index);
+
         characters[index].SetActive(true);
     }
 
@@ -47,6 +62,15 @@ public class PlayerSelect : MonoBehaviour
         {
             index = 0;
         }
+
+        //запоминание выбора пола персонажа, 0 - ж, 1 - м
+        if (index == 1)
+            DataClass.gender = "w";
+        else
+            DataClass.gender = "m";
+
+        Debug.Log(index);
+
         characters[index].SetActive(true);
     }
 

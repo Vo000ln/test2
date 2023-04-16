@@ -6,7 +6,6 @@ using UnityEngine.Serialization;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 
-
 namespace DialogueEditor
 {
     public enum eSaveVersion
@@ -416,18 +415,45 @@ namespace DialogueEditor
             SpeechNode speech = new SpeechNode();
             //это сделал я, Паша, не кринжуйте сильно, здесь идет замена текста, который в эдиторе помечен <Name> на имя персонажа
             //которое берется из DataClass.name
+            
             string name = editableNode.Name.ToString();
+            //замена спрайта в диалоге в зависимости от пола игрока
+
+            //проверка на то, что речь игрока
+            if (name.Contains("<Name>"))
+            {
+                //проверка, что сейчас мужчина
+                if (DataClass.gender == "M")
+                {
+                    //Resources.Load<Sprite> - эта магическая штука позволяет загрузить какой то спрайт(занпужает из папки Asset/Resources), условный вызов конструктора для спрайта
+                    speech.Icon = Resources.Load<Sprite>("Sprites/izobrazhenie_2023-02-17_154250842");
+                }
+                //проверка, что сейчас женщина
+                else if (DataClass.gender == "W")
+                {
+                    //Resources.Load<Sprite> - эта магическая штука позволяет загрузить какой то спрайт(занпужает из папки Asset/Resources), условный вызов конструктора для спрайта
+                    speech.Icon = Resources.Load<Sprite>("Sprites/Static_1");
+                }
+
+            }
+            //если речь не игрока, ставим дефолтную картинку, которая стоит в эдиторе
+            else
+            {
+                speech.Icon = editableNode.Icon;
+            }
+            
             name = name.Replace("<Name>", DataClass.name);
             speech.Name = name;
             string tmp = editableNode.Text.ToString(); 
             tmp = tmp.Replace("<Name>", DataClass.name);
+            
             //конец замены на имя
+            
             speech.Text = tmp;
             speech.AutomaticallyAdvance = editableNode.AdvanceDialogueAutomatically;
             speech.AutoAdvanceShouldDisplayOption = editableNode.AutoAdvanceShouldDisplayOption;
             speech.TimeUntilAdvance = editableNode.TimeUntilAdvance;
             speech.TMPFont = editableNode.TMPFont;
-            speech.Icon = editableNode.Icon;
             speech.Audio = editableNode.Audio;
             speech.Volume = editableNode.Volume;
 
