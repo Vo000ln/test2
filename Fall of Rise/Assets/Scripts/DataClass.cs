@@ -16,7 +16,8 @@ public static class DataClass
     public static int relation = 0;
     //пол персонажа - для вставки подходящей картинки в диалогах 
     public static string gender;
-
+    //конец диалога на сцене с комнатой
+    public static int endDialogue = 0;
 
     //диалоги
     //choose_conversation_mommy - диалог с мамой

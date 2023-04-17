@@ -8,6 +8,7 @@ public class TransitionTo1Corpus : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.tag == "Player")
         {
             zone = true;
@@ -22,9 +23,10 @@ public class TransitionTo1Corpus : MonoBehaviour
 
     void Update()
     {
-        if (zone && Input.GetKeyDown(KeyCode.E))
+        if (zone && Input.GetKeyDown(KeyCode.E) && DataClass.endDialogue == 1)
         {
-            Application.LoadLevel("Computer");
+            Application.LoadLevel("StudentHostel");
+            DataClass.endDialogue = 0;
         }
     }
 }

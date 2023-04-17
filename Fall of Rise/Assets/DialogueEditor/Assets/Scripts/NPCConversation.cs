@@ -47,6 +47,11 @@ namespace DialogueEditor
             DataClass.relation += relation;
         }
 
+        public void EndDialogue()
+        {
+            DataClass.endDialogue = 1;
+        }
+
 
         // Getters
         public int Version { get { return saveVersion; } }
