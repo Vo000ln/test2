@@ -1475,6 +1475,7 @@ GameObject:
   - component: {fileID: 851511414}
   - component: {fileID: 851511415}
   - component: {fileID: 851511416}
+  - component: {fileID: 851511417}
   m_Layer: 0
   m_Name: AllHouseBackground_9
   m_TagString: Wall
@@ -1588,6 +1589,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zone: 0
+--- !u!58 &851511417
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851511412}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!1 &924156574
 GameObject:
   m_ObjectHideFlags: 0
