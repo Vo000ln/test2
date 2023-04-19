@@ -154,8 +154,11 @@ namespace DialogueEditor
             SetState(eState.TransitioningDialogueBoxOn);
         }
 
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         public void EndConversation()
         {
+            DataClass.endDialogue += 1;
+      
             SetState(eState.TransitioningDialogueOff);
 
             if (OnConversationEnded != null)

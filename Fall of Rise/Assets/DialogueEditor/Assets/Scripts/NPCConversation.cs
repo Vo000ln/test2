@@ -49,7 +49,7 @@ namespace DialogueEditor
 
         public void EndDialogue()
         {
-            DataClass.endDialogue = 1;
+            DataClass.endDialogue += 1;
         }
 
 
