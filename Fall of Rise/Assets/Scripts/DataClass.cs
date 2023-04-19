@@ -17,6 +17,8 @@ public static class DataClass
     //пол персонажа - для вставки подходящей картинки в диалогах 
     public static string gender;
     //конец диалога на сцене с комнатой
+    public static bool end;
+    
     public static int endDialogue = 0;
 
     //диалоги
