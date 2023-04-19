@@ -8,6 +8,12 @@ public class LevelTransition : MonoBehaviour
 {
     public void changeScene()
     {
+        StartCoroutine(Coroutine());
+    }
+
+    IEnumerator Coroutine()
+    {
+        yield return new WaitForSecondsRealtime(2);
         SceneManager.LoadScene("Menu");
     }
 }
