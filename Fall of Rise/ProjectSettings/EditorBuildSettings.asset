@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Computer.unity
     guid: 7970270b9d3b71d47bf0c72cb573f47c
   - enabled: 1
-    path: Assets/Scenes/StudentHostel.unity
+    path: Assets/Scenes/HostelForRun.unity
     guid: f086c7c7ed1b0284597a7ad1835c197b
+  - enabled: 1
+    path: Assets/Scenes/14Frame.unity
+    guid: aa0bb06d1b0a4c04cbe9e05bdd6f3764
   m_configObjects: {}
