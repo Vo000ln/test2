@@ -1,0 +1,805 @@
+fileFormatVersion: 2
+guid: ed7069be9ecaa0345a2a06c56b8b8a45
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63c5b546e189a5488e3d0b32e177e1f
+      internalID: -461160592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1dfc7ce002a0547907a74d04916692
+      internalID: 1874103416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bae4db46c048547ae77a36ed2ef50e
+      internalID: 1702145867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_3
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 227
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716307c5f030c514f946707e577fbe3f
+      internalID: 1865830842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 232
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f854590c07a92b140a3d3d9578ddb8c7
+      internalID: 254360268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_5
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 232
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9548317f582c03947a9347dcbd927da4
+      internalID: -473218400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 204
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456a2fc4c1d5bae43b5c5075f0a83f86
+      internalID: -1358515008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_7
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e4fe90883d07142912d2159b17c7e4
+      internalID: 1062284611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fccef207e9dea4479770d1ccdedc985
+      internalID: -1224251120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 215
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a207155a05b3947438e4d206a9c6b257
+      internalID: 220697007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_10
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 215
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0bb8a2ec9ca694b9a5f5f45dc29d9e
+      internalID: 1898148277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_11
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 215
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2fdc35a92c62574aae657bd9cd1eb7d
+      internalID: -1700788440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_12
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 199
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836a715d650068a46865d70a20ee1a01
+      internalID: 168964338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 199
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5179466ec17e3354fa6fa6ebc2b1519c
+      internalID: -1064308126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_14
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 199
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecbfd39555c7bf419ea73db4da6e313
+      internalID: 1908805660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 199
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dd836ecd7bd404fa732c6cc221d24e
+      internalID: -1571122854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_16
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 200
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f59a743b10276c4b8038a6b45957e26
+      internalID: 556072477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_17
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 211
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bd157abae2a81459bebc307510e4f5
+      internalID: 595304576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_18
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 211
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4253b7a59249863428276e8656f0b8eb
+      internalID: -2139074822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_19
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287c1eac655163046840c99ff91bb3ba
+      internalID: -1477404019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_20
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 168
+        width: 50
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0859bbdabe6ae7d4b9448d9a55574a8f
+      internalID: 2022790321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 169
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6209e6d99c1afc44bcfb19304728ace
+      internalID: -2125696693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_22
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 190
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac987b19fcaebe4b9e0fa0f7630fb9f
+      internalID: 1077962367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_23
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 190
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2886b835eb56c6d4883cd24f91f3a214
+      internalID: 1881520565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_24
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 171
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22659df12b8d4df4fa3c452e7ad1cb1f
+      internalID: 2125283388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_25
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 171
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b65268eeb35f84597e2328d4e78e51
+      internalID: -771275293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_26
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 144
+        width: 38
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50af6395f5b60284fac04820944d6c13
+      internalID: 1290348892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_27
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 150
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b9009db39355e4392a76a3cbbbca95
+      internalID: -1748916550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_28
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 150
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32ab93a955173046928aaaef5f2c72a
+      internalID: 1135067322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_29
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 129
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb0a9e72d99f0846b9260ca295e5aea
+      internalID: -1139347895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-all_aliments_in_location_aseprite_30
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 129
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53dd06cda5ce24644bfc773c7234e12d
+      internalID: -545836232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Sprite-all_aliments_in_location_aseprite_14: 1908805660
+      Sprite-all_aliments_in_location_aseprite_0: -461160592
+      Sprite-all_aliments_in_location_aseprite_23: 1881520565
+      Sprite-all_aliments_in_location_aseprite_26: 1290348892
+      Sprite-all_aliments_in_location_aseprite_13: -1064308126
+      Sprite-all_aliments_in_location_aseprite_5: -473218400
+      Sprite-all_aliments_in_location_aseprite_1: 1874103416
+      Sprite-all_aliments_in_location_aseprite_29: -1139347895
+      Sprite-all_aliments_in_location_aseprite_22: 1077962367
+      Sprite-all_aliments_in_location_aseprite_9: 220697007
+      Sprite-all_aliments_in_location_aseprite_6: -1358515008
+      Sprite-all_aliments_in_location_aseprite_18: -2139074822
+      Sprite-all_aliments_in_location_aseprite_16: 556072477
+      Sprite-all_aliments_in_location_aseprite_10: 1898148277
+      Sprite-all_aliments_in_location_aseprite_28: 1135067322
+      Sprite-all_aliments_in_location_aseprite_21: -2125696693
+      Sprite-all_aliments_in_location_aseprite_11: -1700788440
+      Sprite-all_aliments_in_location_aseprite_27: -1748916550
+      Sprite-all_aliments_in_location_aseprite_4: 254360268
+      Sprite-all_aliments_in_location_aseprite_15: -1571122854
+      Sprite-all_aliments_in_location_aseprite_20: 2022790321
+      Sprite-all_aliments_in_location_aseprite_24: 2125283388
+      Sprite-all_aliments_in_location_aseprite_7: 1062284611
+      Sprite-all_aliments_in_location_aseprite_3: 1865830842
+      Sprite-all_aliments_in_location_aseprite_17: 595304576
+      Sprite-all_aliments_in_location_aseprite_25: -771275293
+      Sprite-all_aliments_in_location_aseprite_8: -1224251120
+      Sprite-all_aliments_in_location_aseprite_2: 1702145867
+      Sprite-all_aliments_in_location_aseprite_12: 168964338
+      Sprite-all_aliments_in_location_aseprite_19: -1477404019
+      Sprite-all_aliments_in_location_aseprite_30: -545836232
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
