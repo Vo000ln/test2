@@ -14,12 +14,13 @@ public class NoticeQuestTelephone : MonoBehaviour
 
     void Update()
     {
-        //1 для проигрывания анимации
-        if (DataClass.endDialogue == 1)
+        //1   
+        //  1 - это когда мы со сцены StudentHostel сразу начинаем, 3 - для того, чтобы с самого начала игры
+        if (DataClass.endDialogue == 3 || DataClass.endDialogue == 1)
         {
-            notice.SetActive(true); //проигрывается уведомление
+            notice.SetActive(true); // 
             DataClass.endDialogue = 0;
-            GameObject.Find("EndDialogue").GetComponent<NoticeQuestTelephone>().enabled = false; //чтобы не перегружать систему постоянными апдейтами
+            GameObject.Find("EndDialogue").GetComponent<NoticeQuestTelephone>().enabled = false; //     
         }
     }
 
