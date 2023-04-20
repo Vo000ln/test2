@@ -24,7 +24,7 @@ public class TransitionTo1Corpus : MonoBehaviour
 
     void Update()
     {
-        if (zone && DataClass.endDialogue == 2)
+        if (zone && DataClass.end)
         {
             fadeIn.SetActive(true); //���������� ��������
             StartCoroutine(Coroutine()); //��� �������� � +- ����������� �������� �����
