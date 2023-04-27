@@ -24,10 +24,10 @@ public class TransitionTo1Corpus : MonoBehaviour
 
     void Update()
     {
-        if (zone  && DataClass.endDialogue == 2)
+        if (zone && Input.GetKeyDown(KeyCode.E) && DataClass.endDialogue == 1)
         {
-            fadeIn.SetActive(true); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
-            StartCoroutine(Coroutine()); //пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ +- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+            fadeIn.SetActive(true); //активируем анимацию
+            StartCoroutine(Coroutine()); //для ожидания и +- нормального перехода сцены
         }
     }
 
