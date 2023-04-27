@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TransitionFrom1To2Corpus : MonoBehaviour
+public class TransitionFrom14ToHostel : MonoBehaviour
 {
     public bool zone = false;
 
@@ -24,7 +24,7 @@ public class TransitionFrom1To2Corpus : MonoBehaviour
     {
         if (zone)
         {
-            Application.LoadLevel("14Frame");
+            Application.LoadLevel("HostelForRun");
         }
     }
 }

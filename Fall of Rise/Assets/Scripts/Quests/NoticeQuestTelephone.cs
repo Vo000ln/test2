@@ -14,12 +14,12 @@ public class NoticeQuestTelephone : MonoBehaviour
 
     void Update()
     {
-        //1 для проигрывания анимации
-        if (DataClass.endDialogue == 1)
+        //1 пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        if (DataClass.endDialogue == 1 || DataClass.endDialogue == 3)
         {
-            notice.SetActive(true); //проигрывается уведомление
+            notice.SetActive(true); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             DataClass.endDialogue = 0;
-            GameObject.Find("EndDialogue").GetComponent<NoticeQuestTelephone>().enabled = false; //чтобы не перегружать систему постоянными апдейтами
+            GameObject.Find("EndDialogue").GetComponent<NoticeQuestTelephone>().enabled = false; //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         }
     }
 

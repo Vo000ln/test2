@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TransitionTo1Corpus : MonoBehaviour
+public class TransitionToStudentHostel : MonoBehaviour
 {
     public bool zone = false;
     public GameObject fadeIn;
@@ -24,10 +24,10 @@ public class TransitionTo1Corpus : MonoBehaviour
 
     void Update()
     {
-        if (zone && Input.GetKeyDown(KeyCode.E) && DataClass.endDialogue == 1)
+        if (zone  && DataClass.endDialogue == 2)
         {
-            fadeIn.SetActive(true); //активируем анимацию
-            StartCoroutine(Coroutine()); //для ожидания и +- нормального перехода сцены
+            fadeIn.SetActive(true); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            StartCoroutine(Coroutine()); //пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ +- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         }
     }
 
