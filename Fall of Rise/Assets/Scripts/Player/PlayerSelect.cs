@@ -45,9 +45,9 @@ public class PlayerSelect : MonoBehaviour
 
         //запоминание выбора пола персонажа, 0 - ж, 1 - м
         if (index == 1)
-            DataClass.gender = "w";
+            DataClass.gender = "W";
         else
-            DataClass.gender = "m";
+            DataClass.gender = "M";
 
         Debug.Log(index);
 

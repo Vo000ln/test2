@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 4255734}
   m_Layer: 0
   m_Name: Men
-  m_TagString: Player
+  m_TagString: PlayerMen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -613,7 +613,7 @@ GameObject:
   - component: {fileID: 48845899}
   m_Layer: 0
   m_Name: Woman
-  m_TagString: Player
+  m_TagString: PlayerWoman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2192,7 +2192,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584026851}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cdf44c45c58aa34a8dcf671d0398b22, type: 3}
   m_Name: 
@@ -2208,7 +2208,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584026851}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1350d2445c39ba1458843c74ff0b9360, type: 3}
   m_Name: 
