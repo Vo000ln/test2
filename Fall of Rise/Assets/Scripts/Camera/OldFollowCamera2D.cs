@@ -26,7 +26,15 @@ public class OldFollowCamera2D : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        if (DataClass.gender == "M")
+        {
+            target = GameObject.FindGameObjectWithTag("PlayerMen").transform;
+        }
+        if (DataClass.gender == "W")
+        {
+            //Debug.Log("eeem");
+            target = GameObject.FindGameObjectWithTag("PlayerWoman").transform;
+        }
     }
 
     // Update is called once per frame

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Object
   - Computer
+  - PlayerMen
+  - PlayerWoman
   layers:
   - Default
   - TransparentFX
