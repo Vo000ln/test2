@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class AppearanceCloud : MonoBehaviour
 {
     public bool zone = false;
@@ -31,11 +31,11 @@ public class AppearanceCloud : MonoBehaviour
         }
         if (zone && Input.GetKeyDown(KeyCode.E) && for_one)
         {
-            zone = false; //закрываем доступ к зоне
-            notice.SetActive(false); //делаем облако неактивным
-            for_one = false; //чтобы в дальнейшем персонаж не мог тыкать на газету
+            zone = false; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
+            notice.SetActive(false); //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            for_one = false; //пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-            //(через мои любимые корутины)
+            //(пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
             fadeIn.SetActive(true);
             StartCoroutine(Coroutine());
         }
@@ -45,6 +45,7 @@ public class AppearanceCloud : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(7);
         fadeIn.SetActive(false);
-        //тут должен быть переход на новую сцену
+        //пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        SceneManager.LoadScene("Crossword");
     }
 }
