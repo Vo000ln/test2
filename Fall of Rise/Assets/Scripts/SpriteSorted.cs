@@ -43,4 +43,37 @@ public class SpriteSorted : MonoBehaviour
                 GameObject.FindGameObjectWithTag("PlayerWoman").GetComponent<BoxCollider2D>().offset = offset;
             }
     }
+    // void Start(){
+    //     pos = GetComponent<Transform>();
+    // }
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
+    //     {
+    //         if (other.tag == "PlayerMen")
+    //         {
+    //             size = new Vector2(0.5625f, 0.2452773f);
+    //             offset = new Vector2(0, -0.4685132f);  
+    //             pos.position = new Vector3(pos.position.x, pos.position.y, -1f);
+    //         }
+    //         if (other.tag == "PlayerWoman")
+    //         {
+    //             size = new Vector2(0.5625f, 0.2262964f);
+    //             offset = new Vector2(0, -0.5417128f);     
+    //             pos.position = new Vector3(pos.position.x, pos.position.y, -1f);
+    //         }
+    //     }
+    // }
+
+    // private void OnTriggerExit2D(Collider2D other)
+    // {
+    //     if (other.tag == "PlayerMen")
+    //         {
+    //             pos.position = new Vector3(pos.position.x, pos.position.y, -2f);
+    //         }
+    //         if (other.tag == "PlayerWoman")
+    //         {
+    //             pos.position = new Vector3(pos.position.x, pos.position.y, -2f);
+    //         }
+    // }
 }
