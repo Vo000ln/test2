@@ -4,33 +4,28 @@ using UnityEngine;
 
 public class SpriteSorted : MonoBehaviour
 {
-    public float offset = 0;
-    private int sortingOrderBase = 0;
-    private Renderer renderer;
     //изменение коллайдеров главного героя если он подошел к нпс, чтобы не наступать на них
-    // private void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     if (other.tag == "PlayerMen")
-    //     {
-            
-
-    //     }
-    //     if (other.tag == "PlayerWoMen")
-    //     {
-            
-
-    //     }
-    // }
-
-    // private void OnTriggerExit2D(Collider2D other)
-    // {
-        
-    // }
-    private void Awake(){
-        renderer = GetComponent<Renderer>();
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
+        {
+            if (other.tag == "PlayerMen")
+            {
+                Vector2 S = GameObject.FindGameObjectWithTag("PlayerMen").GetComponent<SpriteRenderer>().sprite.bounds.size;
+                GameObject.FindGameObjectWithTag("PlayerMen").GetComponent<BoxCollider2D>().size = S;
+                GameObject.FindGameObjectWithTag("PlayerMen").GetComponent<BoxCollider2D>().offset = new Vector2(0, 0);
+            }
+            if (other.tag == "PlayerWoman")
+            {
+                Vector2 S = GameObject.FindGameObjectWithTag("PlayerWoman").GetComponent<SpriteRenderer>().sprite.bounds.size;
+                GameObject.FindGameObjectWithTag("PlayerWoman").GetComponent<BoxCollider2D>().size = S;
+                GameObject.FindGameObjectWithTag("PlayerWoman").GetComponent<BoxCollider2D>().offset = new Vector2(0, 0);
+            }
+        }
     }
-    
-    private void LateUpdate(){
-        renderer.sortingOrder = (int)(sortingOrderBase - transform.position.y + offset);
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+
     }
 }
