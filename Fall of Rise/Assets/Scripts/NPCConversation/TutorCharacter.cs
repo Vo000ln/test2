@@ -33,6 +33,9 @@ public class TutorCharacter : MonoBehaviour
             {
                 ConversationManager.Instance.StartConversation(myConversation);
                 DataClass.choose_conversation_tutor = 0;
+                DataClass.choose_conversation_O3 = 1;
+                DataClass.choose_conversation_O2 = 1;
+                DataClass.choose_conversation_O1 = 1;
             }
         }
     }
