@@ -7,13 +7,15 @@ public class MovedMommy : MonoBehaviour
     public Transform transform;
     public float speed;
     public bool fl = false;
+
     void Start(){
         transform = GetComponent<Transform>();
     }
     void Update()
     {
-        if(fl){
-            Vector3 tmp = new Vector3(-1.1f,3.2f,-0.2f) - transform.position;
+        if(fl)
+        {
+            Vector3 tmp = new Vector3(-1.1f, 3.2f, -0.2f) - transform.position;
             if(tmp.y < 0.05f){
                 transform.position = Vector3.Lerp(transform.position, new Vector3(-1.1f,3.2f,-0.2f), speed);
             }
@@ -31,5 +33,14 @@ public class MovedMommy : MonoBehaviour
     public void start(){
         fl = true;
         DataClass.choose_conversation_mommy = 3; //активируется диалог после выбора, чтобы мама сама посмотрела списки
+        GetComponent<Animator>().enabled = true;
+        StartCoroutine(Coroutine());
+
+    }
+
+    IEnumerator Coroutine()
+    {
+        yield return new WaitForSecondsRealtime(3);
+        GetComponent<Animator>().enabled = false;
     }
 }

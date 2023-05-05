@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 39768842}
   - component: {fileID: 39768843}
   - component: {fileID: 39768844}
+  - component: {fileID: 39768845}
   m_Layer: 0
   m_Name: Mommy
   m_TagString: Untagged
@@ -284,6 +285,26 @@ MonoBehaviour:
   transform: {fileID: 0}
   speed: 1.2
   fl: 0
+--- !u!95 &39768845
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39768837}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: feb18dff801da9a48b2b0091da9cbca0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &132480736
 GameObject:
   m_ObjectHideFlags: 0
