@@ -36,13 +36,6 @@ public class  CheckInput : MonoBehaviour
                 {
                     number = digit - '0' - 1;
                     maxLen = AllCrossword.all_words[number].Length + 1;
-                    //проверка на то что слово уже было угадано
-                    //if (AllCrossword.guessed[number] && number != 0)
-                    //{
-                    //    input.DeactivateInputField();
-                    //    StartCoroutine(Coroutine_guessed());
-                    //}
-                    //Debug.Log(maxLen);
                 }
                 else
                 {
@@ -59,11 +52,12 @@ public class  CheckInput : MonoBehaviour
                     if (tmp == symb)
                     {
                         fl = true;
-                        //проверка на то, что была введена единица(такая странная, потому что есть 10,11,12), то есть она работает, когда после 1 начинают вводить букву, и если 1 уже была угадана, то запускаем корутин
+                        //проверка на то что слово уже было угадано   
                         if(AllCrossword.guessed[number])
                         {
                             input.text = input.text.Substring(0, input.text.Length - 1);
                             input.DeactivateInputField();
+                            //уведомление о том, что слово введено
                             StartCoroutine(Coroutine_guessed());  
                             return;
                         }
@@ -78,12 +72,6 @@ public class  CheckInput : MonoBehaviour
                         fl = true;
                         number = int.Parse(txt) - 1;
                         maxLen = AllCrossword.all_words[number].Length + 2;
-                        //проверка на то что слово уже было угадано
-                        //if (AllCrossword.guessed[number])
-                        //{
-                        //    input.DeactivateInputField();
-                        //    StartCoroutine(Coroutine_guessed());
-                        //}
                     }    
                 }
                 //если буква не русская то удаляем последний символ
@@ -97,6 +85,7 @@ public class  CheckInput : MonoBehaviour
                     AllCrossword.guessed[number] = true;
                     if (Array.TrueForAll(AllCrossword.guessed, value => { return value; }))
                     {
+                        //если угадали все, запускаем кортуин с переходом на другую сцену
                         StartCoroutine(Coroutine_End());
                         return;
                     }
@@ -113,7 +102,7 @@ public class  CheckInput : MonoBehaviour
         //проврека что все слова угаданы
         
     }
-    //для записи слова
+    //для записи слова в кроссворд
     IEnumerator Coroutine_Fill()
     {
         yield return new WaitForSecondsRealtime(4);
