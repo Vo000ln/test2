@@ -5,6 +5,12 @@ using System;
 using UnityEngine.SceneManagement;
 public class  CheckInput : MonoBehaviour
 {
+    //канвас с кроссоврдом
+    public GameObject defaultt;
+    //при попытку еще раз ввести слово
+    public GameObject notright;
+    //при отгадывании кроссворда
+    public GameObject uraaa;
     //поле ввода
     [SerializeField]
     public TMP_InputField input;
@@ -57,7 +63,8 @@ public class  CheckInput : MonoBehaviour
                         {
                             input.text = input.text.Substring(0, input.text.Length - 1);
                             input.DeactivateInputField();
-                            //уведомление о том, что слово введено
+                            //уведомление о том, что слово введено 
+                            notright.SetActive(true);
                             StartCoroutine(Coroutine_guessed());  
                             return;
                         }
@@ -83,9 +90,12 @@ public class  CheckInput : MonoBehaviour
                 {
                     input.DeactivateInputField();
                     AllCrossword.guessed[number] = true;
+                    //установка слова в кроссворд
+                    GameObject.Find((number + 1).ToString()).GetComponent<TMP_InputField>().SetTextWithoutNotify(input.text.Substring((number + 1).ToString().Length, input.text.Length - (number + 1).ToString().Length));
                     if (Array.TrueForAll(AllCrossword.guessed, value => { return value; }))
                     {
-                        //если угадали все, запускаем кортуин с переходом на другую сцену
+                        //если угадали все, запускаем корутин с переходом на другую сцену
+                        uraaa.SetActive(true);
                         StartCoroutine(Coroutine_End());
                         return;
                     }
@@ -105,7 +115,7 @@ public class  CheckInput : MonoBehaviour
     //для записи слова в кроссворд
     IEnumerator Coroutine_Fill()
     {
-        yield return new WaitForSecondsRealtime(4);
+        yield return new WaitForSecondsRealtime(1);
         input.ActivateInputField();
         input.SetTextWithoutNotify("");
         number = 0;
@@ -115,6 +125,7 @@ public class  CheckInput : MonoBehaviour
     IEnumerator Coroutine_guessed()
     {
         yield return new WaitForSecondsRealtime(4);
+        notright.SetActive(false);
         input.ActivateInputField();
         input.SetTextWithoutNotify("");
         number = 0;
