@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 4255734}
   m_Layer: 0
   m_Name: Men
-  m_TagString: Player
+  m_TagString: PlayerMen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -613,7 +613,7 @@ GameObject:
   - component: {fileID: 48845899}
   m_Layer: 0
   m_Name: Woman
-  m_TagString: Player
+  m_TagString: PlayerWoman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2020,6 +2020,7 @@ GameObject:
   - component: {fileID: 584026852}
   - component: {fileID: 584026855}
   - component: {fileID: 584026856}
+  - component: {fileID: 584026857}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2045,7 +2046,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.21698111, g: 0.21186364, b: 0.21186364, a: 0}
+  m_BackGroundColor: {r: 0.19607843, g: 0.19607843, b: 0.2, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2121,6 +2122,19 @@ MonoBehaviour:
   smoothing: 2
   maxPos: {x: 25.1, y: 10.82}
   minPos: {x: -2.48, y: -1.89}
+--- !u!114 &584026857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584026851}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1350d2445c39ba1458843c74ff0b9360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 48845897}
 --- !u!1 &589844521
 GameObject:
   m_ObjectHideFlags: 0

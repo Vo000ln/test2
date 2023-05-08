@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TransitionFrom2To1Corpus : MonoBehaviour
+public class TransitionFrom14ToHostel : MonoBehaviour
 {
     public bool zone = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
         {
             zone = true;
             //Debug.Log("OBJ");

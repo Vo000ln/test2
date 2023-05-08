@@ -11,7 +11,7 @@ public class TelephoneCharacter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
         {
             zone = true;
         }
@@ -27,6 +27,7 @@ public class TelephoneCharacter : MonoBehaviour
         if (zone && Input.GetKeyDown(KeyCode.E) && for_one)
         {
             ConversationManager.Instance.StartConversation(myConversation);
+            DataClass.choose_conversation_tutor = 1; //после активации телефона сделали так, чтобы смог произойти дальнейший диалог с куратором в 14к
             for_one = false;
         }
     }
