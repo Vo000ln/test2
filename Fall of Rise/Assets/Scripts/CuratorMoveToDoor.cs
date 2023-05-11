@@ -13,7 +13,7 @@ public class CuratorMoveToDoor : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(DataClass.endDialogue);
+        //Debug.Log(DataClass.endDialogue);
         if (fl && (DataClass.endDialogue == 1))
         {
             Vector3 tmp = new Vector3(16f, -2.6f, -2f) - transform.position;

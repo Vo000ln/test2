@@ -7,6 +7,7 @@ public class TelephoneCharacter : MonoBehaviour
 {
     public bool zone = false;
     public bool for_one = true;
+    public GameObject cloud;
     public NPCConversation myConversation;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -26,6 +27,7 @@ public class TelephoneCharacter : MonoBehaviour
     {
         if (zone && Input.GetKeyDown(KeyCode.E) && for_one)
         {
+            cloud.SetActive(false);
             ConversationManager.Instance.StartConversation(myConversation);
             DataClass.choose_conversation_tutor = 1; //после активации телефона сделали так, чтобы смог произойти дальнейший диалог с куратором в 14к
             for_one = false;

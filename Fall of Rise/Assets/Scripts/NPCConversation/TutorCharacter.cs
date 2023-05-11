@@ -7,6 +7,7 @@ public class TutorCharacter : MonoBehaviour
 {
     public bool zone = false; //зона, чтобы знать, когда персонаж подошел к объекту
     public NPCConversation myConversation;  //диалоги
+    public GameObject cloud;
     //public NPCConversation myConversation2;
     //public NPCConversation myConversation3;
 
@@ -27,6 +28,7 @@ public class TutorCharacter : MonoBehaviour
     {
         if (zone && Input.GetKeyDown(KeyCode.E))
         {
+            cloud.SetActive(false);
             //1 диалог
             //ОТРЕДАКТИРОВАТЬ, ОСТАВИТЬ ТОЛЬКО +1 И =0 В ДАТАКЛАССЕ В РЕЛИЗЕ ИГРЫ, ЧТОБЫ АКТИВИРОВАТЬ ДИАЛОГ МОЖНО БЫЛО ТОЛЬКО ПОСЛЕ РАЗГОВОРА ПО ТЕЛЕФОНУ
             if (DataClass.choose_conversation_tutor == 1 || DataClass.choose_conversation_tutor == 2) //1, если мы начинаем с этой сцены; 2, если начинаем со сцены StudentHostel
