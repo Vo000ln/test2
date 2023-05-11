@@ -13,7 +13,8 @@ public class CuratorMoveToDoor : MonoBehaviour
     }
     void Update()
     {
-        if(fl)
+        Debug.Log(DataClass.endDialogue);
+        if (fl && (DataClass.endDialogue == 1))
         {
             Vector3 tmp = new Vector3(16f, -2.6f, -2f) - transform.position;
             if(!next){
@@ -43,16 +44,19 @@ public class CuratorMoveToDoor : MonoBehaviour
         }
     }
     public void start(){
+        DataClass.endDialogue = 0; //после того, как нажмется "закончить" DataClass.endDialogue станет равным 1
         fl = true;
         //DataClass.choose_conversation_mommy = 3; //������������ ������ ����� ������, ����� ���� ���� ���������� ������
         //GetComponent<Animator>().enabled = true;
         //StartCoroutine(Coroutine());
- 
+
     }
  
     IEnumerator Coroutine()
     {
         yield return new WaitForSecondsRealtime(3);
-        GetComponent<Animator>().enabled = false;
+        //DataClass.endDialogue = 0;
+        //Debug.Log(DataClass.endDialogue);
+        //GetComponent<Animator>().enabled = false;
     }
 }
