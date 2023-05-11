@@ -30,4 +30,8 @@ public static class DataClass
     public static int choose_conversation_O1 = 0;
     //choose_conversation_O3 - диалог с Ириной
     public static int choose_conversation_O3 = 0;
+
+    //облака
+    //на сцене HomePlayer
+    public static bool off_cloud1 = false;
 }
