@@ -38,6 +38,7 @@ public class MommyCharacter : MonoBehaviour
     public NPCConversation myConversation;  //диалоги
     public NPCConversation myConversation2;
     public NPCConversation myConversation3;
+    public GameObject cloud;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -56,6 +57,7 @@ public class MommyCharacter : MonoBehaviour
     {
         if (zone && Input.GetKeyDown(KeyCode.E))
         {
+            cloud.SetActive(false);
             //1 диалог
             if (DataClass.choose_conversation_mommy == 1)
             {
