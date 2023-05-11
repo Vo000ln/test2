@@ -8,7 +8,7 @@ public class QuestComputer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
         {
             zone = true;
             //Debug.Log("OBJ");
@@ -24,6 +24,7 @@ public class QuestComputer : MonoBehaviour
     {
         if (zone && Input.GetKeyDown(KeyCode.E))
         {
+            DataClass.off_cloud1 = true;
             Application.LoadLevel("Computer");
         }
     }
