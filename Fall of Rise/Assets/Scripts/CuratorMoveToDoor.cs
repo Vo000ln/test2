@@ -37,7 +37,6 @@ public class CuratorMoveToDoor : MonoBehaviour
             if(next){
                 transform.position = Vector3.Lerp(transform.position, new Vector3(16f, -2f, -2f), speed*Time.deltaTime*3f);
             }
-            //next = true;
         }
         if(next){
             transform.position = Vector3.Lerp(transform.position, new Vector3(16f, -2f, -2f), speed*Time.deltaTime);
