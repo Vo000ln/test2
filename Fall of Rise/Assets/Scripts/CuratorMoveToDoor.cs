@@ -14,7 +14,10 @@ public class CuratorMoveToDoor : MonoBehaviour
     void Update()
     {
         //Debug.Log(DataClass.endDialogue);
-        if (fl && (DataClass.endDialogue == 1))
+        //Debug.Log(DataClass.choose_conversation_O1);
+        //Debug.Log(DataClass.choose_conversation_O2);
+        //Debug.Log(DataClass.choose_conversation_O3);
+        if (fl && DataClass.endDialogue == 1 && (DataClass.choose_conversation_O1 == 1 || DataClass.choose_conversation_O2 == 1 || DataClass.choose_conversation_O3 == 1))
         {
             Vector3 tmp = new Vector3(16f, -2.6f, -2f) - transform.position;
             if(!next){

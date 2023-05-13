@@ -23,7 +23,7 @@ public static class DataClass
     //choose_conversation_mommy - диалог с мамой
     public static int choose_conversation_mommy = 1; //начинаем с 1, чтобы первый диалог точно активировался
     //choose_conversation_tutor - диалог с куратором
-    public static int choose_conversation_tutor = 1; //начинаем с 0, идет +1 после активации вставки с заданием пройти в корпус
+    public static int choose_conversation_tutor = 0; //начинаем с 0, идет +1 после активации вставки с заданием пройти в корпус
     //choose_conversation_O2 - диалог с Васькой
     public static int choose_conversation_O2 = 0; //начинаем с 0, идет +1 после разговора с кураторшей
     //choose_conversation_O2 - диалог с Владом
@@ -34,4 +34,6 @@ public static class DataClass
     //облака
     //на сцене HomePlayer
     public static bool off_cloud1 = false;
+    //на сцене 14Frame
+    public static bool off_cloud_krossword = false;
 }
