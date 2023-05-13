@@ -10,6 +10,7 @@ public class TransitionFromCrossword : MonoBehaviour
     {
         for (int i = 0; i < 12; ++i)
             AllCrossword.guessed[i] = false;
+        DataClass.off_cloud_krossword = true;
         SceneManager.LoadScene("14Frame");
     }
 

@@ -32,6 +32,7 @@ public class O2Character : MonoBehaviour
             {
                 ConversationManager.Instance.StartConversation(myConversation);
                 DataClass.choose_conversation_O2 = 2; //поменять на 2
+                DataClass.choose_conversation_tutor = 2; //после разговора с одногруппником у кураторши активируется новый диалог
             }
         }
     }
