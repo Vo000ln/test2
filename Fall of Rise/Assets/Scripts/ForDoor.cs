@@ -2,28 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteSorted : MonoBehaviour
+public class ForDoor : MonoBehaviour
 {
     // private Vector2 size;
     // private Vector2 offset;
-    private Transform pos;
-    void Start(){
-        pos =  GetComponent<Transform>();
-    }
+    public Transform posM,posW;
+    // void Start(){
+    //     pos =  GetComponent<Transform>();
+    // }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
+        if (other.tag == "PlayerMen")
         {
-            pos.position = new Vector3(pos.position.x, pos.position.y, -0.6f);
+            posM.position = new Vector3(posM.position.x, posM.position.y, 0.6f);
+            
+        }
+        if (other.tag == "PlayerWoman")
+        {
+            posW.position = new Vector3(posW.position.x, posW.position.y, 0.6f);
             
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
+        if (other.tag == "PlayerMen")
         {
-            pos.position = new Vector3(pos.position.x, pos.position.y, -2.4f);
+            posM.position = new Vector3(posM.position.x, posM.position.y, 0f);
+            
+        }
+        if (other.tag == "PlayerWoman")
+        {
+            posW.position = new Vector3(posW.position.x, posW.position.y, 0f);
             
         }
     }

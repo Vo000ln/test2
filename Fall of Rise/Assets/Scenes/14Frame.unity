@@ -1056,9 +1056,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 0}
-  speed: 0.5
+  speed: 0.8
   fl: 0
   next: 0
+  end: 0
+  max: 0
 --- !u!114 &482114273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1072,9 +1074,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 0}
-  speed: 0.5
+  speed: 0.8
   fl: 0
   next: 0
+  end: 0
+  max: 0
 --- !u!1 &499058328
 GameObject:
   m_ObjectHideFlags: 0
