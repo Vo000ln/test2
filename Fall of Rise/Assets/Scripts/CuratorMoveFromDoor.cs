@@ -10,14 +10,19 @@ public class CuratorMoveFromDoor : MonoBehaviour
     public bool next = false;
     public bool end = false;
     public float max = 0.0f;
+
+    public GameObject tutor;
+    public GameObject anim_open_door;
+
     void Start(){
         transform = GetComponent<Transform>();
     }
+
     void Update()
     {
         //Debug.Log(DataClass.endDialogue);
         if(!end){
-            if(next){
+            if (next){
                 Vector3 tmp = new Vector3(8.5f, -3f, -2f) - transform.position;
                 float distance = (float)System.Math.Sqrt(tmp.x * tmp.x + tmp.y * tmp.y);
                 if(max == 0.0f)
@@ -29,6 +34,9 @@ public class CuratorMoveFromDoor : MonoBehaviour
             else{
                 if (fl && (DataClass.endDialogue == 2))
                 {
+                    tutor.SetActive(true);
+                    tutor.GetComponent<Animator>().SetBool("choose", true);
+                    //StartCoroutine(Coroutine());
                     Vector3 tmp = new Vector3(16f, -4f, -2f) - transform.position;
                     float distance = (float)System.Math.Sqrt(tmp.x * tmp.x + tmp.y * tmp.y);
                     if(max == 0.0f)
@@ -43,8 +51,16 @@ public class CuratorMoveFromDoor : MonoBehaviour
         }
         
     }
+
     public void start(){
+        //УБРАТЬ ENDDIALOGUE
+        //tutor.SetActive(true);
+        //tutor.GetComponent<Animator>().SetBool("choose", true);
+
+        //tutor.GetComponent<Animator>().enabled = false;
+        //DataClass.endDialogue = 2;
         fl = true;
+        
         //DataClass.choose_conversation_mommy = 3; //������������ ������ ����� ������, ����� ���� ���� ���������� ������
         //GetComponent<Animator>().enabled = true;
         //StartCoroutine(Coroutine());
@@ -53,6 +69,8 @@ public class CuratorMoveFromDoor : MonoBehaviour
  
     IEnumerator Coroutine()
     {
+        //tutor.SetActive(true);
+        //tutor.GetComponent<Animator>().SetBool("choose", true);
         yield return new WaitForSecondsRealtime(3);
         //DataClass.endDialogue = 0;
         //Debug.Log(DataClass.endDialogue);
