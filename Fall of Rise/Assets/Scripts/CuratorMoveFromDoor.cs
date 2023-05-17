@@ -10,6 +10,7 @@ public class CuratorMoveFromDoor : MonoBehaviour
     public bool next = false;
     public bool end = false;
     public float max = 0.0f;
+    public bool end_anim = true;
 
     public GameObject tutor;
     public GameObject anim_open_door;
@@ -21,7 +22,8 @@ public class CuratorMoveFromDoor : MonoBehaviour
     void Update()
     {
         //Debug.Log(DataClass.endDialogue);
-        if(!end){
+        //Debug.Log(DataClass.endDialogue);
+        if (!end){
             if (next){
                 Vector3 tmp = new Vector3(8.5f, -3f, -2f) - transform.position;
                 float distance = (float)System.Math.Sqrt(tmp.x * tmp.x + tmp.y * tmp.y);
@@ -34,8 +36,14 @@ public class CuratorMoveFromDoor : MonoBehaviour
             else{
                 if (fl && (DataClass.endDialogue == 2))
                 {
-                    tutor.SetActive(true);
-                    tutor.GetComponent<Animator>().SetBool("choose", true);
+                    //anim_open_door.GetComponent<Animator>().enabled = true;
+                    StartCoroutine(Coroutine());
+                    //Debug.Log(DataClass.endDialogue);
+                    //tutor.SetActive(true);
+
+                    //tutor.GetComponent<SpriteRenderer>().enabled = true;
+                    //tutor.GetComponent<Animator>().SetBool("choose", true);
+
                     //StartCoroutine(Coroutine());
                     Vector3 tmp = new Vector3(16f, -4f, -2f) - transform.position;
                     float distance = (float)System.Math.Sqrt(tmp.x * tmp.x + tmp.y * tmp.y);
@@ -69,9 +77,24 @@ public class CuratorMoveFromDoor : MonoBehaviour
  
     IEnumerator Coroutine()
     {
+        if (end_anim)
+            anim_open_door.GetComponent<Animator>().enabled = true;
+        end_anim = false;
+        yield return new WaitForSecondsRealtime(1);
+        //anim_open_door.GetComponent<Animator>().enabled = true;
+        tutor.GetComponent<SpriteRenderer>().enabled = true;
+        tutor.GetComponent<Animator>().SetBool("choose", true);
+        yield return new WaitForSecondsRealtime(0.9f);
+        anim_open_door.GetComponent<Animator>().enabled = false;
+        //if (end_anim)
+        //{
+        //    anim_open_door.GetComponent<Animator>().enabled = false;
+        //    end_anim = false;
+        //}
+
+        //tutor.SetActive(false);
         //tutor.SetActive(true);
         //tutor.GetComponent<Animator>().SetBool("choose", true);
-        yield return new WaitForSecondsRealtime(3);
         //DataClass.endDialogue = 0;
         //Debug.Log(DataClass.endDialogue);
         //GetComponent<Animator>().enabled = false;
