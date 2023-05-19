@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Computer.unity
     guid: 7970270b9d3b71d47bf0c72cb573f47c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HostelForRun.unity
     guid: f086c7c7ed1b0284597a7ad1835c197b
   - enabled: 1
@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Crossword.unity
     guid: 9afcf9e88e882ca49bbee6f46cbfe3a9
+  - enabled: 1
+    path: Assets/Scenes/HostelforDialogue.unity
+    guid: b4aeaec3473ca0f4584ee269a087ab6c
   m_configObjects: {}
