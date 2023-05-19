@@ -34,7 +34,7 @@ public class CuratorMoveFromDoor : MonoBehaviour
                     end = true;
             }
             else{
-                if (fl && (DataClass.endDialogue == 2))
+                if (fl && (DataClass.endDialogue == 4))
                 {
                     //anim_open_door.GetComponent<Animator>().enabled = true;
                     StartCoroutine(Coroutine());
