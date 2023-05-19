@@ -3773,7 +3773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bb032c8cc7ca0944b7834af6b59a616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 180
+  time: 10
   timerText: {fileID: 860532397}
   source: {fileID: 860532400}
   clip: {fileID: 8300000, guid: 1141507a00ab0e549ac189bc2c37d465, type: 3}
