@@ -22,10 +22,9 @@ public class TransitionFrom14ToHostel : MonoBehaviour
 
     void Update()
     {
-        if (zone && DataClass.endDialogue >= 3)
+        if (zone)
         {
-            DataClass.endDialogue = 0;
-            Application.LoadLevel("HostelforDialogue");
+            Application.LoadLevel("HostelForRun");
         }
     }
 }
