@@ -74,7 +74,7 @@ public class  CheckInput : MonoBehaviour
                 }
                 //если номер двузначный(10,11,12)
                 if (input.text.Length == 2) {
-                    if (txt[0] == '1' && (txt[1] == '0' || txt[1] == '1' || txt[1] == '2'))
+                    if (txt[0] == '1' && (txt[1] >= '0' && txt[1] <= '9'))
                     {
                         fl = true;
                         number = int.Parse(txt) - 1;
