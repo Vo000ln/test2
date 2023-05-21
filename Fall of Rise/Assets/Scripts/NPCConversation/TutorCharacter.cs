@@ -36,7 +36,7 @@ public class TutorCharacter : MonoBehaviour
         {
             cloud_krossword.SetActive(false);
         }
-        if (zone && Input.GetKeyDown(KeyCode.E))
+        if (zone && Input.GetKeyDown(KeyCode.E) && DataClass.move == 0)
         {
             cloud.SetActive(false);
             //1 диалог

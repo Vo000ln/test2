@@ -18,7 +18,10 @@ public static class DataClass
     public static string gender = "M";
     //конец диалога на сцене с комнатой
     public static int endDialogue = 0;
-
+    //запрет на движение
+    public static int move = 0;
+    //когда двигаешься move = 0
+    //когда недвигаешься move = 1
     //диалоги
     //choose_conversation_mommy - диалог с мамой
     public static int choose_conversation_mommy = 1; //начинаем с 1, чтобы первый диалог точно активировался

@@ -19,15 +19,33 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed;
-
-
-        Anim.SetFloat("moveY", myRB.velocity.y);
-        Anim.SetFloat("moveX", myRB.velocity.x);
-        if(Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Vertical") == 1)
+        if (DataClass.move == 0)
         {
-            Anim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
-            Anim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            speed = 5;
+            myRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed;
+
+
+            Anim.SetFloat("moveY", myRB.velocity.y);
+            Anim.SetFloat("moveX", myRB.velocity.x);
+            if (Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Vertical") == 1)
+            {
+                Anim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+                Anim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            }
+        }
+        else
+        {
+            speed = 0;
+            myRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed;
+
+
+            Anim.SetFloat("moveY", myRB.velocity.y);
+            Anim.SetFloat("moveX", myRB.velocity.x);
+            if (Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Vertical") == 1)
+            {
+                Anim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+                Anim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            }
         }
 
     }

@@ -14,12 +14,12 @@ public class ForDoor : MonoBehaviour
     {
         if (other.tag == "PlayerMen")
         {
-            posM.position = new Vector3(posM.position.x, posM.position.y, 0.6f);
+            posM.position = new Vector3(posM.position.x, posM.position.y, 1f);
             
         }
         if (other.tag == "PlayerWoman")
         {
-            posW.position = new Vector3(posW.position.x, posW.position.y, 0.6f);
+            posW.position = new Vector3(posW.position.x, posW.position.y, 1f);
             
         }
     }
@@ -28,12 +28,12 @@ public class ForDoor : MonoBehaviour
     {
         if (other.tag == "PlayerMen")
         {
-            posM.position = new Vector3(posM.position.x, posM.position.y, 0f);
+            posM.position = new Vector3(posM.position.x, posM.position.y, 0.4f);
             
         }
         if (other.tag == "PlayerWoman")
         {
-            posW.position = new Vector3(posW.position.x, posW.position.y, 0f);
+            posW.position = new Vector3(posW.position.x, posW.position.y, 0.4f);
             
         }
     }

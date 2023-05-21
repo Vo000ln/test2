@@ -25,7 +25,7 @@ public class TelephoneCharacter : MonoBehaviour
 
     private void Update()
     {
-        if (zone && Input.GetKeyDown(KeyCode.E) && for_one)
+        if (zone && Input.GetKeyDown(KeyCode.E) && for_one && DataClass.move == 0)
         {
             cloud.SetActive(false);
             ConversationManager.Instance.StartConversation(myConversation);

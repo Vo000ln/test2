@@ -25,7 +25,7 @@ public class O1Character : MonoBehaviour
 
     private void Update()
     {
-        if (zone && Input.GetKeyDown(KeyCode.E))
+        if (zone && Input.GetKeyDown(KeyCode.E) && DataClass.move == 0)
         {
             //1 диалог
             if (DataClass.choose_conversation_O1 == 1)
