@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestComputer : MonoBehaviour
+public class ComputerAfterMeeting : MonoBehaviour
 {
     public bool zone = false;
 
@@ -11,7 +11,6 @@ public class QuestComputer : MonoBehaviour
         if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
         {
             zone = true;
-            //Debug.Log("OBJ");
         }
     }
 
@@ -24,8 +23,8 @@ public class QuestComputer : MonoBehaviour
     {
         if (zone && Input.GetKeyDown(KeyCode.E))
         {
-            DataClass.off_cloud1 = true;
-            Application.LoadLevel("Computer_v2");
+            DataClass.off_cloud_hfr = true;
+            Application.LoadLevel("Computer");
         }
     }
 }
