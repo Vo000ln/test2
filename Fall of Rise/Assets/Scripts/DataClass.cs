@@ -7,7 +7,7 @@ public static class DataClass
     //name - имя персонажа
     public static string scene =  "";
     //name - название сцены
-    public static string name;
+    public static string name = "";//УБРАААААААААААААААААААААААААААТЬ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     //intellect - уровень интеллекта
     public static int intellect = 0;
     //brave - смелость
