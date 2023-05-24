@@ -43,4 +43,6 @@ public static class DataClass
     public static bool off_cloud_krossword = false;
     //на сцене HostelForRun
     public static bool off_cloud_hfr = false;
+    public static bool off_cloud_igor = false;
+    public static bool on_bed = false;
 }
