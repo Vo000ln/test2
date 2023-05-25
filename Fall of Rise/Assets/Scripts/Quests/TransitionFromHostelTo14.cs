@@ -24,7 +24,7 @@ public class TransitionFromHostelTo14 : MonoBehaviour
     {
         if (zone)
         {
-            Application.LoadLevel("14Frame");
+            Application.LoadLevel("Frame_ekzamen");
         }
     }
 }
