@@ -4,37 +4,20 @@ using UnityEngine;
 
 public class ForDoor : MonoBehaviour
 {
-    // private Vector2 size;
-    // private Vector2 offset;
-    public Transform posM,posW;
-    // void Start(){
-    //     pos =  GetComponent<Transform>();
-    // }
+    public Transform Door;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "PlayerMen")
+        if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
         {
-            posM.position = new Vector3(posM.position.x, posM.position.y, 1f);
-            
-        }
-        if (other.tag == "PlayerWoman")
-        {
-            posW.position = new Vector3(posW.position.x, posW.position.y, 1f);
-            
+            Door.position = new Vector3(Door.position.x, Door.position.y, -1f);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "PlayerMen")
+        if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
         {
-            posM.position = new Vector3(posM.position.x, posM.position.y, 0.4f);
-            
-        }
-        if (other.tag == "PlayerWoman")
-        {
-            posW.position = new Vector3(posW.position.x, posW.position.y, 0.4f);
-            
+            Door.position = new Vector3(Door.position.x, Door.position.y, -0f);
         }
     }
     //изменение коллайдеров главного героя если он подошел к нпс, чтобы не наступать на них

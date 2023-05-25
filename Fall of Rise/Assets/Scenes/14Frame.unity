@@ -2540,7 +2540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767886374}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.31677, y: 0.32402, z: -2.4}
+  m_LocalPosition: {x: 0.53, y: 0.34, z: -2.4}
   m_LocalScale: {x: 6.636852, y: 6.558758, z: 1.0088}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4707,7 +4707,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1161979995, guid: c13921227bc6c6246ac731fe93aa181b, type: 3}
+  m_Sprite: {fileID: 532394997, guid: 67aa213b332946145a66ccd87c29bdae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4726,7 +4726,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1216677427}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.02, y: 1.07, z: -2}
+  m_LocalPosition: {x: 3.05, y: 0.52, z: -2}
   m_LocalScale: {x: 6.429178, y: 6.572305, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4979,7 +4979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313274595}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2759, y: -1.8759, z: -2}
+  m_LocalPosition: {x: 0.47, y: -3.19, z: -2}
   m_LocalScale: {x: 6.4612417, y: 6.1370306, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5970,7 +5970,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -182688494, guid: c13921227bc6c6246ac731fe93aa181b, type: 3}
+  m_Sprite: {fileID: -263600166, guid: 67aa213b332946145a66ccd87c29bdae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5989,7 +5989,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412267426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.76, y: -3.07, z: -2}
+  m_LocalPosition: {x: -0.4, y: -1.39, z: -2}
   m_LocalScale: {x: 6.605041, y: 6.363309, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6006,7 +6006,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0765596}

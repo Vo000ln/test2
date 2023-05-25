@@ -11,7 +11,6 @@ public class PauseMenu : MonoBehaviour
     { 
         if (Input.GetKeyDown(KeyCode.Escape)) 
         { 
-            DataClass.scene = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene("Menu");
         } 
     } 

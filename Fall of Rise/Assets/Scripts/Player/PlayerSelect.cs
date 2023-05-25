@@ -76,7 +76,7 @@ public class PlayerSelect : MonoBehaviour
 
     public void StartScene()
     {
-        if(DataClass.name.Length > 0){
+        if(DataClass.name.Length > 2){
             PlayerPrefs.SetInt("SelectPlayer", index);
             SceneManager.LoadScene("HomePlayer");
         }
