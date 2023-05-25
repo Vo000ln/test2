@@ -20,7 +20,7 @@ public class MovedMommy : MonoBehaviour
             float distance = (float)System.Math.Sqrt(tmp.x * tmp.x + tmp.y * tmp.y);
             if(max == 0.0f)
                 max = (float)System.Math.Sqrt(tmp.x * tmp.x + tmp.y * tmp.y);
-            transform.position = Vector3.Lerp(transform.position, new Vector3(-1.1f,3.2f,-0.2f), speed * Time.deltaTime * ((1.2f + (float)System.Math.Pow((max - distance), 2.7f))/(4)));
+            transform.position = Vector3.Lerp(transform.position, new Vector3(-1.1f,3.2f,transform.position.z), speed * Time.deltaTime * ((1.2f + (float)System.Math.Pow((max - distance), 2.7f))/(4)));
         }
     }
     public void start(){
