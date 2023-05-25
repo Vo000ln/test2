@@ -29,12 +29,15 @@ public static class DataClass
     public static int choose_conversation_tutor = 0; //начинаем с 0, идет +1 после активации вставки с заданием пройти в корпус
     //choose_conversation_O2 - диалог с Васькой
     public static int choose_conversation_O2 = 0; //начинаем с 0, идет +1 после разговора с кураторшей
+    public static int choose_conversation_O2EKZ = 0; //разговор с Васей на сцене экзамена, сделала отдельно, чтобы быстрее проводить проверки
     //choose_conversation_O2 - диалог с Владом
     public static int choose_conversation_O1 = 0;
     //choose_conversation_O3 - диалог с Ириной
     public static int choose_conversation_O3 = 0;
     //choose_conversation_igor - диалог с Игорем
     public static int choose_conversation_igor = 0;
+    //choose_conversation_TF - диалог с Токсиньей Федоровной
+    public static int choose_conversation_TF = 0;
 
     //облака
     //на сцене HomePlayer
