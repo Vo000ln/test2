@@ -48,4 +48,7 @@ public static class DataClass
     public static bool off_cloud_hfr = false;
     public static bool off_cloud_igor = false;
     public static bool on_bed = false;
+
+    //для пазлов
+    public static int count_elements = 0;
 }
