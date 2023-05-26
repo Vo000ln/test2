@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
+using UnityEngine.SceneManagement;
 
 public class TFCharacter : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class TFCharacter : MonoBehaviour
     public NPCConversation myConversation;  //диалоги
 
     public GameObject cloud_AfterCab;
+    public GameObject canvas_startpuzzle;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -25,6 +27,11 @@ public class TFCharacter : MonoBehaviour
 
     private void Update()
     {
+        if (DataClass.endDialogue == 2)
+        {
+            DataClass.endDialogue = 0;
+            StartCoroutine(Coroutine());
+        }
         if (zone && Input.GetKeyDown(KeyCode.E) && DataClass.move == 0)
         {
             //1 диалог
@@ -36,5 +43,12 @@ public class TFCharacter : MonoBehaviour
                 DataClass.choose_conversation_O2EKZ = 2;
             }
         }
+    }
+
+    IEnumerator Coroutine()
+    {
+        canvas_startpuzzle.SetActive(true);
+        yield return new WaitForSecondsRealtime(2.9f);
+        SceneManager.LoadScene("Puzzle");
     }
 }
