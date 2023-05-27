@@ -7,10 +7,15 @@ public class SpriteSortedMOmmy : MonoBehaviour
     // private Vector2 size;
     // private Vector2 offset;
     private Transform pos;
+    public GameObject canvas_fadein;
+
     void Start()
     {
+        StartCoroutine(Coroutine());
+
         pos = GetComponent<Transform>();
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
@@ -28,6 +33,13 @@ public class SpriteSortedMOmmy : MonoBehaviour
 
         }
     }
+
+    IEnumerator Coroutine()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        canvas_fadein.SetActive(false);
+    }
+
     //изменение коллайдеров главного героя если он подошел к нпс, чтобы не наступать на них
     // private void OnTriggerEnter2D(Collider2D other)
     // {

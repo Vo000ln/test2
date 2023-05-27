@@ -27,6 +27,12 @@ public class  CheckInput : MonoBehaviour
     private readonly char[] Symbols = new char[32] {'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', 'ф', 'ы', 'в', 'а', 'п', 'р', 'о', 'л', 'д', 'ж', 'э', 'й', 'ц', 'у','к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х', 'ъ'};
     private string txt;
 
+    public GameObject canvas_fadein;
+
+    void Start()
+    {
+        StartCoroutine(Coroutine_Disable());
+    }
     //метод для обновления поля ввода
     public void update()
     {
@@ -141,5 +147,11 @@ public class  CheckInput : MonoBehaviour
         maxLen = 0;
         DataClass.brave += 5;
         SceneManager.LoadScene("14Frame");
+    }
+
+    IEnumerator Coroutine_Disable()
+    {
+        yield return new WaitForSecondsRealtime(1   );
+        canvas_fadein.SetActive(false);
     }
 }

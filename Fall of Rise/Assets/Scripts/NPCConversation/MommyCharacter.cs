@@ -9,7 +9,9 @@ public class MommyCharacter : MonoBehaviour
     public NPCConversation myConversation;  //диалоги
     public NPCConversation myConversation2;
     public NPCConversation myConversation3;
+
     public GameObject cloud;
+    public GameObject canvas_fadein;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,6 +31,7 @@ public class MommyCharacter : MonoBehaviour
         if (DataClass.off_cloud1)
         {
             cloud.SetActive(false);
+            canvas_fadein.SetActive(false);
         }
         if (zone && Input.GetKeyDown(KeyCode.E) && DataClass.move == 0)
         {

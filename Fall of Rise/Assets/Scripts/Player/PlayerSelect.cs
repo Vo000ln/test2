@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 public class PlayerSelect : MonoBehaviour
 {
     private GameObject[] characters;
@@ -49,7 +49,7 @@ public class PlayerSelect : MonoBehaviour
         else
             DataClass.gender = "M";
 
-        Debug.Log(index);
+        //Debug.Log(index);
 
         characters[index].SetActive(true);
     }
@@ -69,16 +69,17 @@ public class PlayerSelect : MonoBehaviour
         else
             DataClass.gender = "m";
 
-        Debug.Log(index);
+        //Debug.Log(index);
 
         characters[index].SetActive(true);
     }
 
     public void StartScene()
     {
-        if(DataClass.name.Length > 2){
+        if(DataClass.name.Length > 2)
+        {
             PlayerPrefs.SetInt("SelectPlayer", index);
-            SceneManager.LoadScene("HomePlayer");
+            DataClass.trans_on = true;
         }
     }
 }

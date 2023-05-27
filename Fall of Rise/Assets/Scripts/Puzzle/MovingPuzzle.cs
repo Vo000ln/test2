@@ -32,14 +32,12 @@ public class MovingPuzzle : MonoBehaviour
         if (Mathf.Abs(this.transform.localPosition.x - form.transform.localPosition.x) <= 50f &&
            Mathf.Abs(this.transform.localPosition.y - form.transform.localPosition.y) <= 50f && finish != true)
         {
-            Debug.Log("win");
             this.transform.position = new Vector2(form.transform.position.x, form.transform.position.y);
             this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             this.gameObject.GetComponent<SpriteRenderer>().sortingOrder--;
+            this.gameObject.GetComponent<SpriteRenderer>().sortingOrder--;
             finish = true;
             ++DataClass.count_elements;
-            Debug.Log(DataClass.count_elements);
-
         }
     }
 

@@ -7,9 +7,12 @@ public class SpriteSorted : MonoBehaviour
     // private Vector2 size;
     // private Vector2 offset;
     private Transform pos;
-    void Start(){
+
+    void Start()
+    {
         pos =  GetComponent<Transform>();
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
