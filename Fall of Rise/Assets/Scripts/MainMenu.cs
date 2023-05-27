@@ -4,12 +4,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
+    public GameObject canvas_fadein;
+
     public void PlayGame()
     {
-       SceneManager.LoadScene("CutScene");  
+        StartCoroutine(Coroutine());
     }
+
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    IEnumerator Coroutine()
+    {
+        canvas_fadein.SetActive(true);
+        yield return new WaitForSecondsRealtime(1.9f);
+        SceneManager.LoadScene("CutScene");
     }
 }

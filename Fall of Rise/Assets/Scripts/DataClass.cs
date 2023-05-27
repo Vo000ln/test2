@@ -38,6 +38,7 @@ public static class DataClass
     public static int choose_conversation_igor = 0;
     //choose_conversation_TF - диалог с Токсиньей Федоровной
     public static int choose_conversation_TF = 0;
+    public static int choose_conversation_TF2 = 0; //на второй сцене, мы ж разделили
 
     //облака
     //на сцене HomePlayer
@@ -51,4 +52,7 @@ public static class DataClass
 
     //для пазлов
     public static int count_elements = 0;
+
+    //перенос со сцены cutscene на сцену homeplayer
+    public static bool trans_on = false;
 }

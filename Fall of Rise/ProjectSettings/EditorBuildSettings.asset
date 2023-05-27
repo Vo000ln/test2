@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzle.unity
     guid: 09dcb918cdf3f2d4391abe2c6f570362
+  - enabled: 1
+    path: Assets/Scenes/EKZ_2.unity
+    guid: 6401edde98493834e92c622e7383f31f
   m_configObjects: {}

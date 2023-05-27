@@ -3,17 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 
-public class O1Character : MonoBehaviour
+public class TF2Character : MonoBehaviour
 {
     public bool zone = false; //зона, чтобы знать, когда персонаж подошел к объекту
     public NPCConversation myConversation;  //диалоги
 
-    public GameObject canvas_fadein;
+    public GameObject canvas_cloudbilet;
+    public GameObject transition_to_crossword;
 
-    void Start()
-    {
-        StartCoroutine(Coroutine());
-    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
@@ -29,21 +26,19 @@ public class O1Character : MonoBehaviour
 
     private void Update()
     {
+        if (DataClass.endDialogue == 1)
+        {
+            canvas_cloudbilet.SetActive(true);
+            transition_to_crossword.SetActive(true);
+        }
         if (zone && Input.GetKeyDown(KeyCode.E) && DataClass.move == 0)
         {
             //1 диалог
-            if (DataClass.choose_conversation_O1 == 1)
+            if (DataClass.choose_conversation_TF2 == 0)
             {
                 ConversationManager.Instance.StartConversation(myConversation);
-                DataClass.choose_conversation_O1 = 2;
-                DataClass.choose_conversation_tutor = 2; //после разговора с одногруппником у кураторши активируется новый диалог
+                DataClass.choose_conversation_TF2 = 1;
             }
         }
-    }
-
-    IEnumerator Coroutine()
-    {
-        yield return new WaitForSecondsRealtime(1);
-        canvas_fadein.SetActive(false);
     }
 }

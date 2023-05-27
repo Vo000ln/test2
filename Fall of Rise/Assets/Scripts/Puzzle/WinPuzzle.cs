@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinPuzzle : MonoBehaviour
 {
@@ -28,5 +29,6 @@ public class WinPuzzle : MonoBehaviour
         canvas_fadefinish.SetActive(true);
         yield return new WaitForSecondsRealtime(2.9f);
         //тут типо затемнение, еще один канвас
+        SceneManager.LoadScene("EKZ_2");
     }
 }
