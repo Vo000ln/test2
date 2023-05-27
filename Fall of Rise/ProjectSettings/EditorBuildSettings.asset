@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 9b7a1a8ced7c36b4786be73edf3beb3c
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/CutScene.unity
@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Frame_ekzamen.unity
     guid: 54084329e86f5a04e8119ba2302132a6
+  - enabled: 1
+    path: Assets/Scenes/Puzzle.unity
+    guid: 09dcb918cdf3f2d4391abe2c6f570362
   m_configObjects: {}
