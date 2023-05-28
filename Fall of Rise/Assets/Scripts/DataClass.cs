@@ -9,9 +9,9 @@ public static class DataClass
     //name - название сцены
     public static string name = "";
     //intellect - уровень интеллекта
-    public static int intellect = 7;
+    public static int intellect = 0;
     //brave - смелость
-    public static int brave = 10;
+    public static int brave = 0;
     //relation - отношение с мамой
     public static int relation = 0;
     //пол персонажа - для вставки подходящей картинки в диалогах 

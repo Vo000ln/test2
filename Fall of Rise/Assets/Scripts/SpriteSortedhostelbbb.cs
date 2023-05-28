@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteSortedVasya : MonoBehaviour
+public class SpriteSortedhostelbbb : MonoBehaviour
 {
     // private Vector2 size;
     // private Vector2 offset;
@@ -18,7 +18,7 @@ public class SpriteSortedVasya : MonoBehaviour
     {
         if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
         {
-            pos.position = new Vector3(pos.position.x, pos.position.y, -0.5f);
+            pos.position = new Vector3(pos.position.x, pos.position.y, -0.3f);
 
         }
     }
@@ -27,12 +27,12 @@ public class SpriteSortedVasya : MonoBehaviour
     {
         if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
         {
-            pos.position = new Vector3(pos.position.x, pos.position.y, -4f);
+            pos.position = new Vector3(pos.position.x, pos.position.y, 0f);
 
         }
     }
 
-    
+
     //изменение коллайдеров главного героя если он подошел к нпс, чтобы не наступать на них
     // private void OnTriggerEnter2D(Collider2D other)
     // {

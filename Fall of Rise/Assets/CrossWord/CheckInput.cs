@@ -41,12 +41,15 @@ public class  CheckInput : MonoBehaviour
         System.Random random = new System.Random();
         //чтоб заполнить сколько надо
         int[] arr_rand = new int[19] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18};
+        int count_hor = 0;
         for(int i = 0;i < brave; ++i)
         {
             //выбираем ранд слово
             
             int now_fill = arr_rand[random.Next(0, arr_rand.Length)];
             //Debug.Log(now_fill);
+            if ((now_fill == 14 || now_fill == 16 || now_fill == 11 || now_fill == 13 || now_fill == 5 || now_fill == 8 || now_fill == 0 || now_fill == 6 || now_fill == 4 || now_fill == 9 || now_fill == 17))
+                count_hor++;      
             if (arr_rand.Length > 0)
             {
                 List<int> tmp = new List<int>(arr_rand);
@@ -62,8 +65,8 @@ public class  CheckInput : MonoBehaviour
             GameObject.Find((now_fill + 1).ToString()).GetComponent<TMP_InputField>().SetTextWithoutNotify(AllCrossword.all_words[now_fill]);
             AllCrossword.guessed[now_fill] = true;
         }
-        if (brave + intel > 11)
-            intel = 11 - brave;
+        if (count_hor + intel > 11)
+            intel = 11 - count_hor;
         for(int i = 0;i < intel; ++i)
         {
             int now_fill = 0;
