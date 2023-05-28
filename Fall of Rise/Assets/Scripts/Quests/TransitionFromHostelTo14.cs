@@ -33,6 +33,9 @@ public class TransitionFromHostelTo14 : MonoBehaviour
     {
         canvas_fadeout.SetActive(true);
         yield return new WaitForSecondsRealtime(1.9f);
-        Application.LoadLevel("14Frame");
+        if (DataClass.gender == "M")
+            Application.LoadLevel("14Frame");
+        else
+            Application.LoadLevel("Woman14Frame");
     }
 }

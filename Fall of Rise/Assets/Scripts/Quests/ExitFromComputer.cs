@@ -8,6 +8,9 @@ public class ExitFromComputer : MonoBehaviour
     public void ExitScene()
     {
         DataClass.choose_conversation_mommy = 2; //активируем диалог после выбора "посмотреть самому"
-        SceneManager.LoadScene("HomePlayer");
+        if (DataClass.gender == "M")
+            SceneManager.LoadScene("HomePlayer");
+        else
+            SceneManager.LoadScene("WomanHomePlayer");
     }
 }
