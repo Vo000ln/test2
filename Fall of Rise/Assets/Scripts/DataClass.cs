@@ -57,4 +57,7 @@ public static class DataClass
 
     //перенос со сцены cutscene на сцену homeplayer
     public static bool trans_on = false;
+
+    //для отслеживания зон
+    public static int zone_num = 0;
 }
