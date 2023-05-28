@@ -5510,9 +5510,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000019033289, y: -0.17196219}
+  m_Offset: {x: -0.0000019033289, y: -0.2052609}
   serializedVersion: 2
-  m_Radius: 0.09341051
+  m_Radius: 0.12670922
 --- !u!114 &685483166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11827,7 +11827,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c71c9950d48501648a12dc344e05426c, type: 2}
+  - {fileID: 2100000, guid: 556d84a44a02b804d950eb9e605acd7d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
