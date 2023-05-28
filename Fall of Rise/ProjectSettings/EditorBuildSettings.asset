@@ -47,4 +47,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EKZ_2.unity
     guid: 6401edde98493834e92c622e7383f31f
+  - enabled: 1
+    path: Assets/Scenes/WomanHomePlayer.unity
+    guid: 013d69f833cf9244293eab92e7e69673
+  - enabled: 1
+    path: Assets/Scenes/WomanStudentHostel.unity
+    guid: 458f79ab9b266a042a6e5dc3bae4e2f9
+  - enabled: 1
+    path: Assets/Scenes/Woman14Frame.unity
+    guid: d60b9b4f250a9f14f98abbd9c2f3e105
+  - enabled: 1
+    path: Assets/Scenes/WomanHostelForRun.unity
+    guid: 372428844e8f58d44bcff665a4ddb1be
   m_configObjects: {}

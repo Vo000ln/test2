@@ -10,6 +10,9 @@ public class ExitComputer2 : MonoBehaviour
         DataClass.choose_conversation_igor = 1;
         DataClass.off_cloud_hfr = true;
         DataClass.off_cloud_igor = true;
-        SceneManager.LoadScene("HostelForRun");
+        if (DataClass.gender == "M")
+            SceneManager.LoadScene("HostelForRun");
+        else
+            SceneManager.LoadScene("WomanHostelForRun");
     }
 }

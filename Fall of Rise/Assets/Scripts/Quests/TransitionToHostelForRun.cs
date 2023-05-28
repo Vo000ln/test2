@@ -24,6 +24,9 @@ public class TransitionToHostelForRun : MonoBehaviour
         DataClass.endDialogue = 0; //обнуляем энддиалог для следующих сцен
         AfterMeeting.SetActive(true);
         yield return new WaitForSecondsRealtime(9);
-        Application.LoadLevel("HostelForRun"); //переходим на сцену
+        if (DataClass.gender == "M")
+            Application.LoadLevel("HostelForRun"); //переходим на сцену
+        else
+            Application.LoadLevel("WomanHostelForRun");
     }
 }

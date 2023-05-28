@@ -34,6 +34,9 @@ public class FadeCutScene : MonoBehaviour
     {
         canvas_fadein.SetActive(true);
         yield return new WaitForSecondsRealtime(1.9f);
-        SceneManager.LoadScene("HomePlayer");
+        if (DataClass.gender == "M")
+            SceneManager.LoadScene("HomePlayer");
+        else
+            SceneManager.LoadScene("WomanHomePlayer");
     }
 }

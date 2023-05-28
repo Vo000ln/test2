@@ -35,7 +35,10 @@ public class TransitionToStudentHostel : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(2);
         DataClass.endDialogue = 0;
-        Application.LoadLevel("StudentHostel");
+        if (DataClass.gender == "M")
+            Application.LoadLevel("StudentHostel");
+        else
+            Application.LoadLevel("WomanStudentHostel");
     }
 
 }
