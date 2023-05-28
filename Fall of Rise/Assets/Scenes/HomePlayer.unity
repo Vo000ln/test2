@@ -1892,7 +1892,7 @@ PrefabInstance:
     - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: OptionImage
       value: 
-      objectReference: {fileID: -499087412, guid: 038aca11293f7d247907c289dcaa6c30, type: 3}
+      objectReference: {fileID: 21300000, guid: 221a4dd27c3b4c042aca8d0851eaa2b2, type: 3}
     - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: BackgroundImage
       value: 

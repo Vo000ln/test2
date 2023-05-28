@@ -51,6 +51,7 @@ public class IgorCharacter : MonoBehaviour
             if (DataClass.choose_conversation_igor == 1)
             {
                 ConversationManager.Instance.StartConversation(myConversation);
+                DataClass.choose_conversation_igor = 2;
             }
         }
     }
