@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 public class  CheckInput : MonoBehaviour
 {
     //канвас с кроссоврдом
@@ -32,6 +33,89 @@ public class  CheckInput : MonoBehaviour
     void Start()
     {
         StartCoroutine(Coroutine_Disable());
+        //макс слов это 7
+        int brave = (int)(DataClass.brave / 10f * 5f) + (((DataClass.brave / 10f * 5f) - (int)((DataClass.brave / 10f * 5f))) >= 0.5 ? 1 : 0);
+        //макс букв 21
+        int intel = DataClass.intellect;
+        //сначала заполняем слова, потом буквы
+        System.Random random = new System.Random();
+        //чтоб заполнить сколько надо
+        int[] arr_rand = new int[19] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18};
+        for(int i = 0;i < brave; ++i)
+        {
+            //выбираем ранд слово
+            
+            int now_fill = arr_rand[random.Next(0, arr_rand.Length)];
+            //Debug.Log(now_fill);
+            if (arr_rand.Length > 0)
+            {
+                List<int> tmp = new List<int>(arr_rand);
+                tmp.Remove(now_fill);
+                arr_rand = tmp.ToArray();
+            }
+            string s = "";
+            for (int j = 0; j < arr_rand.Length; ++j)
+            {
+                s += arr_rand[j].ToString() + " ";
+            }
+            //Debug.Log(s);
+            GameObject.Find((now_fill + 1).ToString()).GetComponent<TMP_InputField>().SetTextWithoutNotify(AllCrossword.all_words[now_fill]);
+            AllCrossword.guessed[now_fill] = true;
+        }
+        if (brave + intel > 11)
+            intel = 11 - brave;
+        for(int i = 0;i < intel; ++i)
+        {
+            int now_fill = 0;
+            while(true){
+                now_fill = arr_rand[random.Next(0, arr_rand.Length)];
+                if ((now_fill == 14 || now_fill == 16 || now_fill == 11 || now_fill == 13 || now_fill == 5 || now_fill == 8 || now_fill == 0 || now_fill == 6 || now_fill == 4 || now_fill == 9 || now_fill == 17))
+                    break;
+            }
+            //выбираем буквы
+            int max_len = maxLen = AllCrossword.all_words[now_fill].Length;
+            //номер первой буквы
+            int first = random.Next(0, maxLen);
+            //номер второй буквы
+            int second = first;
+            while(second == first)
+            {
+                second = random.Next(0, maxLen);
+            }
+            //номер третьей буквы
+            int third = second;
+            while (third == first || third == second)
+            {
+                third = random.Next(0, maxLen);
+            }
+            string s = "";
+            for(int j = 0;j < max_len; ++j)
+            {
+                if(j == first)
+                {
+                    s += AllCrossword.all_words[now_fill][j];
+                }else if(j == second)
+                {
+                    s += AllCrossword.all_words[now_fill][j];
+                }
+                else if(j == third)
+                {
+                    s += AllCrossword.all_words[now_fill][j];
+                }
+                else
+                {
+                   s += " ";
+                }
+            }
+            GameObject.Find((now_fill + 1).ToString()).GetComponent<TMP_InputField>().SetTextWithoutNotify(s);
+            //Debug.Log(s);
+            if (arr_rand.Length > 0)
+            {
+                List<int> tmp = new List<int>(arr_rand);
+                tmp.Remove(now_fill);
+                arr_rand = tmp.ToArray();
+            }
+        }
     }
     //метод для обновления поля ввода
     public void update()

@@ -7,11 +7,11 @@ public static class DataClass
     //name - имя персонажа
     public static string scene =  "";
     //name - название сцены
-    public static string name = "";//УБРАААААААААААААААААААААААААААТЬ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    public static string name = "";
     //intellect - уровень интеллекта
-    public static int intellect = 0;
+    public static int intellect = 7;
     //brave - смелость
-    public static int brave = 0;
+    public static int brave = 10;
     //relation - отношение с мамой
     public static int relation = 0;
     //пол персонажа - для вставки подходящей картинки в диалогах 
@@ -22,6 +22,8 @@ public static class DataClass
     public static int move = 0;
     //когда двигаешься move = 0
     //когда недвигаешься move = 1
+    //является ли гг куратором или нет
+    public static bool is_cur = false;
     //диалоги
     //choose_conversation_mommy - диалог с мамой
     public static int choose_conversation_mommy = 1; //начинаем с 1, чтобы первый диалог точно активировался

@@ -57,6 +57,10 @@ namespace DialogueEditor
             DataClass.move = 1;
         }
 
+        public void setcur()
+        {
+            DataClass.is_cur = true;
+        }
 
         // Getters
         public int Version { get { return saveVersion; } }

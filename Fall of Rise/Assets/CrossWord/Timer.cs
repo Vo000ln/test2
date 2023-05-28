@@ -52,6 +52,6 @@ public class Timer : MonoBehaviour
     IEnumerator Coroutine_time_end()
     {
         yield return new WaitForSecondsRealtime(7);
-        SceneManager.LoadScene("14Frame");
+        //SceneManager.LoadScene("14Frame");
     }
 }
