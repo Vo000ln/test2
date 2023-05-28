@@ -6,6 +6,7 @@ public class FadeVasyaRun : MonoBehaviour
 {
     public GameObject canvas_vasyarun;
     public GameObject o2;
+    public GameObject audio_source;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,6 @@ public class FadeVasyaRun : MonoBehaviour
         o2.GetComponent<BoxCollider2D>().enabled = false;
         yield return new WaitForSecondsRealtime(3);
         canvas_vasyarun.SetActive(false);
+        audio_source.SetActive(true);
     }
 }
