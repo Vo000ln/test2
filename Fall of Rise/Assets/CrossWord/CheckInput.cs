@@ -4,8 +4,11 @@ using TMPro;
 using System;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+
 public class  CheckInput : MonoBehaviour
 {
+    //fadeout
+    public GameObject canvas_end;
     //канвас с кроссоврдом
     public GameObject defaultt;
     //при попытку еще раз ввести слово
@@ -188,7 +191,7 @@ public class  CheckInput : MonoBehaviour
                     if (Array.TrueForAll(AllCrossword.guessed, value => { return value; }))
                     {
                         //если угадали все, запускаем корутин с переходом на другую сцену
-                        uraaa.SetActive(true);
+                        //uraaa.SetActive(true);
                         StartCoroutine(Coroutine_End());
                         return;
                     }
@@ -227,18 +230,24 @@ public class  CheckInput : MonoBehaviour
     //запускается, когда все слова угаданы, переходим на предыдущую сцену
     IEnumerator Coroutine_End()
     {
-        yield return new WaitForSecondsRealtime(10);
+        //yield return new WaitForSecondsRealtime(10);
         input.ActivateInputField();
         input.SetTextWithoutNotify("");
         number = 0;
         maxLen = 0;
-        DataClass.brave += 5;
-        SceneManager.LoadScene("14Frame");
+        //DataClass.brave += 5;
+        if (DataClass.gender == "M")
+            DataClass.final_anim = 1; //хорошая концовка муж.
+        else
+            DataClass.final_anim = 2; //хорошая концовка жен.
+        canvas_end.SetActive(true);
+        yield return new WaitForSecondsRealtime(2.9f);
+        SceneManager.LoadScene("Final");
     }
 
     IEnumerator Coroutine_Disable()
     {
-        yield return new WaitForSecondsRealtime(1   );
+        yield return new WaitForSecondsRealtime(1);
         canvas_fadein.SetActive(false);
     }
 }

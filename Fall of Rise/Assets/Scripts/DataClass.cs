@@ -60,4 +60,7 @@ public static class DataClass
 
     //для отслеживания зон
     public static int zone_num = 0;
+
+    //для показа концовки
+    public static int final_anim = 0;
 }
