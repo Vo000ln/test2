@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 20955611}
-  maxLen: 15
+  maxLen: 8
 --- !u!114 &20955611
 MonoBehaviour:
   m_ObjectHideFlags: 0

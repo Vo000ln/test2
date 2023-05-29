@@ -26,7 +26,7 @@ public class CutInput : MonoBehaviour
         {
             txt = input.text;
             char tmp = txt[txt.Length - 1];
-            Debug.Log("123");
+            //Debug.Log("123");
             foreach (char symb in Symbols)
             {
                 if (tmp == symb)
