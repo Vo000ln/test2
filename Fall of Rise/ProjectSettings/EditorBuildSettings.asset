@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WomanHostelForRun.unity
     guid: 372428844e8f58d44bcff665a4ddb1be
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: f30b6f9bf0f934b49bee8029a7b8c05a
   m_configObjects: {}
