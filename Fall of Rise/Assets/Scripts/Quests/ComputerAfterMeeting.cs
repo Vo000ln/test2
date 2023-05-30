@@ -21,9 +21,10 @@ public class ComputerAfterMeeting : MonoBehaviour
 
     void Update()
     {
-        if (zone && Input.GetKeyDown(KeyCode.E))
+        if (zone && Input.GetKeyDown(KeyCode.E) && DataClass.comp)
         {
             DataClass.off_cloud_hfr = true;
+            DataClass.comp = false;
             Application.LoadLevel("Computer");
         }
     }

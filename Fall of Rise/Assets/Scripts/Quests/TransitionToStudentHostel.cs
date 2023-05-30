@@ -24,7 +24,7 @@ public class TransitionToStudentHostel : MonoBehaviour
 
     void Update()
     {
-        if (zone  && DataClass.endDialogue == 2)
+        if (zone && DataClass.endDialogue == 2)
         {
             fadeIn.SetActive(true); //���������� ��������
             StartCoroutine(Coroutine()); //��� �������� � +- ����������� �������� �����
@@ -33,7 +33,7 @@ public class TransitionToStudentHostel : MonoBehaviour
 
     IEnumerator Coroutine()
     {
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(1.9f);
         DataClass.endDialogue = 0;
         if (DataClass.gender == "M")
             Application.LoadLevel("StudentHostel");

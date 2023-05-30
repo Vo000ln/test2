@@ -2510,7 +2510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &645461636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13185,7 +13185,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 475950564, guid: 67aa213b332946145a66ccd87c29bdae, type: 3}
+  m_Sprite: {fileID: -665631087, guid: 15ed40593bb5ac24795172fc3143ed73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13991,6 +13991,9 @@ MonoBehaviour:
   canvas_igor: {fileID: 1321152309}
   canvas_end: {fileID: 1679626279}
   o2: {fileID: 1700820178}
+  genderIcon: {fileID: 1991135461}
+  maleIcon: {fileID: 21300000, guid: 40478bd849f71f54182a53d8af747ec9, type: 3}
+  femaleIcon: {fileID: 21300000, guid: 107355023fe895c4d8a08c724879ee32, type: 3}
 --- !u!58 &1906208969
 CircleCollider2D:
   m_ObjectHideFlags: 0
