@@ -18,7 +18,7 @@ public class SpriteSortedhostelbbb : MonoBehaviour
     {
         if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
         {
-            pos.position = new Vector3(pos.position.x, pos.position.y, -0.3f);
+            pos.position = new Vector3(pos.position.x, pos.position.y, 0f);
 
         }
     }
@@ -27,7 +27,7 @@ public class SpriteSortedhostelbbb : MonoBehaviour
     {
         if (other.tag == "PlayerMen" || other.tag == "PlayerWoman")
         {
-            pos.position = new Vector3(pos.position.x, pos.position.y, 0f);
+            pos.position = new Vector3(pos.position.x, pos.position.y, -0.3f);
 
         }
     }
