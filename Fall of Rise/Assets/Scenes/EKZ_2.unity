@@ -118020,7 +118020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1025235669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118387,6 +118387,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zone: 0
   canvas_fadeout: {fileID: 1467299921}
+  genderIcon: {fileID: 760699786}
+  maleIcon: {fileID: 21300000, guid: 8da26deba543c9f4c8faedb89a48f61c, type: 3}
+  femaleIcon: {fileID: 21300000, guid: b3a7f9b473812bd4b87e00fb2b028998, type: 3}
 --- !u!58 &1108825497
 CircleCollider2D:
   m_ObjectHideFlags: 0

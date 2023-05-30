@@ -63,4 +63,7 @@ public static class DataClass
 
     //для показа концовки
     public static int final_anim = 0;
+
+    //для того, чтобы в компьютер на сцене HostelForRun и WomanHostelForRun можно было зайти лишь раз
+    public static bool comp = true;
 }

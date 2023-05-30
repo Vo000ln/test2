@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
+using UnityEngine.UI;
 
 public class IgorCharacter : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class IgorCharacter : MonoBehaviour
     public GameObject canvas_igor;
     public GameObject canvas_end;
     public GameObject o2;
+
+    public Image genderIcon;
+    public Sprite maleIcon;
+    public Sprite femaleIcon;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -63,6 +68,10 @@ public class IgorCharacter : MonoBehaviour
 
     IEnumerator Coroutine()
     {
+        if (DataClass.gender == "M")
+            genderIcon.sprite = maleIcon;
+        else
+            genderIcon.sprite = femaleIcon;
         canvas_end.SetActive(true);
         yield return new WaitForSecondsRealtime(2);
         o2.GetComponent<SpriteRenderer>().enabled = false;
