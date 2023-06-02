@@ -750,7 +750,7 @@ MonoBehaviour:
   - {fileID: -972911520, guid: 6db0680622c1a3c43abe5de25424f819, type: 3}
   - {fileID: 943388350, guid: 6db0680622c1a3c43abe5de25424f819, type: 3}
   - {fileID: -2085739771, guid: 6db0680622c1a3c43abe5de25424f819, type: 3}
-  fps: 60
+  fps: 5
   playOnAwake: 1
   loop: 1
   destroyOnEnd: 0

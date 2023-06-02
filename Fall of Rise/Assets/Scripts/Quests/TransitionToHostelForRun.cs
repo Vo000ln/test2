@@ -7,10 +7,11 @@ public class TransitionToHostelForRun : MonoBehaviour
 {
     public bool once = true;
     public GameObject AfterMeeting;
+    public GameObject AfterMeetingGirl;
 
-    public Image genderIcon;
-    public Sprite maleIcon;
-    public Sprite femaleIcon;
+    //public Image genderIcon;
+    //public Sprite maleIcon;
+    //public Sprite femaleIcon;
 
     void Start()
     {
@@ -28,10 +29,9 @@ public class TransitionToHostelForRun : MonoBehaviour
         once = false; //чтобы один раз сработал канвас
         DataClass.endDialogue = 0; //обнуляем энддиалог для следующих сцен
         if (DataClass.gender == "M")
-            genderIcon.sprite = maleIcon;
+            AfterMeeting.SetActive(true);
         else
-            genderIcon.sprite = femaleIcon;
-        AfterMeeting.SetActive(true);
+            AfterMeetingGirl.SetActive(true);
         yield return new WaitForSecondsRealtime(9);
         if (DataClass.gender == "M")
             Application.LoadLevel("HostelForRun"); //переходим на сцену
