@@ -86,6 +86,7 @@ public class CuratorMoveToDoor : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.5f);
         anim_open_door.GetComponent<Animator>().enabled = false;
         end_anim = false;
+        tutor.SetActive(false);
 
         //DataClass.endDialogue = 2;
         //anim_open_door = GetComponent<Animator>();
